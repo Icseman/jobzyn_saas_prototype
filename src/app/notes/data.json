@@ -1,0 +1,234 @@
+[
+  {
+    "id": "note-001",
+    "title": "Microsoft Frontend Developer Requirements",
+    "content": "Had the first meeting with Microsoft team. They need 2 senior frontend developers with React and TypeScript experience. Priority is speed - they want to fill positions within 2 weeks. Sarah mentioned they're expanding their Morocco office.",
+    "owner": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-001",
+      "jobId": "job-101",
+      "candidateId": null
+    },
+    "tags": ["client-meeting", "priority", "frontend"],
+    "attachments": [
+      {
+        "id": "file-001",
+        "name": "microsoft-requirements.pdf",
+        "url": "/files/microsoft-requirements.pdf",
+        "type": "application/pdf",
+        "size": 2048576
+      }
+    ],
+    "visibility": "team",
+    "createdAt": "2024-01-15T10:15:00Z",
+    "updatedAt": "2024-01-15T10:45:00Z"
+  },
+  {
+    "id": "note-002",
+    "title": "Johnson & Johnson Medical Director Interview",
+    "content": "Interview with Dr. Ahmed Benali went exceptionally well. He's very knowledgeable about healthcare regulations and has clear requirements for the nursing positions. They need 3 senior nurses and 2 medical technicians. High priority client.",
+    "owner": {
+      "id": "user-124",
+      "name": "Fatima Alami",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-124",
+      "name": "Fatima Alami",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-002",
+      "jobId": "job-201",
+      "candidateId": null
+    },
+    "tags": ["interview", "healthcare", "urgent"],
+    "attachments": [],
+    "visibility": "team",
+    "createdAt": "2024-01-14T09:00:00Z",
+    "updatedAt": "2024-01-14T09:00:00Z"
+  },
+  {
+    "id": "note-003",
+    "title": "Tesla Solar Engineer Candidate Review",
+    "content": "Reviewed 5 candidates for the Solar Engineer position. Top candidate is Mohamed El Fassi - 8 years experience in renewable energy, speaks 3 languages, and has worked on similar projects in Morocco. Aicha wants to schedule final interview next week.",
+    "owner": {
+      "id": "user-125",
+      "name": "Youssef Tazi",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-125",
+      "name": "Youssef Tazi",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-003",
+      "jobId": "job-301",
+      "candidateId": "cand-301"
+    },
+    "tags": ["candidate-review", "renewable-energy", "interview"],
+    "attachments": [
+      {
+        "id": "file-002",
+        "name": "candidate-resumes.pdf",
+        "url": "/files/candidate-resumes.pdf",
+        "type": "application/pdf",
+        "size": 1536000
+      }
+    ],
+    "visibility": "team",
+    "createdAt": "2024-01-13T11:00:00Z",
+    "updatedAt": "2024-01-13T14:30:00Z"
+  },
+  {
+    "id": "note-004",
+    "title": "Goldman Sachs Compliance Requirements",
+    "content": "Laila provided detailed compliance requirements for financial roles. All candidates must have clean background checks, financial certifications (CFA preferred), and 5+ years experience in investment banking. Strict confidentiality agreements required.",
+    "owner": {
+      "id": "user-126",
+      "name": "Karim El Fassi",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-126",
+      "name": "Karim El Fassi",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-004",
+      "jobId": "job-401",
+      "candidateId": null
+    },
+    "tags": ["compliance", "finance", "requirements"],
+    "attachments": [
+      {
+        "id": "file-003",
+        "name": "compliance-checklist.pdf",
+        "url": "/files/compliance-checklist.pdf",
+        "type": "application/pdf",
+        "size": 1024000
+      }
+    ],
+    "visibility": "private",
+    "createdAt": "2024-01-12T13:00:00Z",
+    "updatedAt": "2024-01-12T16:45:00Z"
+  },
+  {
+    "id": "note-005",
+    "title": "Coursera Curriculum Development Meeting",
+    "content": "Met with Omar to discuss curriculum development role. They need someone with both technical skills and teaching experience. Looking for candidates who can create engaging online content and have experience with educational technology platforms.",
+    "owner": {
+      "id": "user-127",
+      "name": "Nadia Berrada",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-127",
+      "name": "Nadia Berrada",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-005",
+      "jobId": "job-502",
+      "candidateId": null
+    },
+    "tags": ["meeting", "education", "curriculum"],
+    "attachments": [],
+    "visibility": "team",
+    "createdAt": "2024-01-11T10:00:00Z",
+    "updatedAt": "2024-01-11T15:20:00Z"
+  },
+  {
+    "id": "note-006",
+    "title": "Weekly Team Standup Notes",
+    "content": "Team standup - discussed progress on all active positions. Microsoft positions are moving fast, Johnson & Johnson needs urgent attention, Tesla candidates are strong. Need to follow up on Goldman Sachs compliance docs.",
+    "owner": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": null,
+      "jobId": null,
+      "candidateId": null
+    },
+    "tags": ["team-meeting", "standup", "weekly"],
+    "attachments": [],
+    "visibility": "team",
+    "createdAt": "2024-01-10T09:00:00Z",
+    "updatedAt": "2024-01-10T09:30:00Z"
+  },
+  {
+    "id": "note-007",
+    "title": "Candidate Interview Feedback - Sara Ahmed",
+    "content": "Interview with Sara Ahmed for Frontend Developer position at Microsoft. Strong technical skills in React and TypeScript, good problem-solving abilities. However, lacks experience with backend integration. Overall: Good fit for frontend role, but may need additional training.",
+    "owner": {
+      "id": "user-124",
+      "name": "Fatima Alami",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-124",
+      "name": "Fatima Alami",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-001",
+      "jobId": "job-101",
+      "candidateId": "cand-101"
+    },
+    "tags": ["interview", "feedback", "frontend"],
+    "attachments": [
+      {
+        "id": "file-004",
+        "name": "sara-ahmed-resume.pdf",
+        "url": "/files/sara-ahmed-resume.pdf",
+        "type": "application/pdf",
+        "size": 512000
+      }
+    ],
+    "visibility": "team",
+    "createdAt": "2024-01-09T14:20:00Z",
+    "updatedAt": "2024-01-09T14:20:00Z"
+  },
+  {
+    "id": "note-008",
+    "title": "Client Relationship Update - Tesla",
+    "content": "Aicha from Tesla is very satisfied with our service so far. She mentioned they might have additional positions opening up in Q2. Great partnership opportunity - they're expanding rapidly in Morocco. Need to maintain regular communication.",
+    "owner": {
+      "id": "user-125",
+      "name": "Youssef Tazi",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face"
+    },
+    "creator": {
+      "id": "user-125",
+      "name": "Youssef Tazi",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face"
+    },
+    "related": {
+      "clientId": "client-003",
+      "jobId": null,
+      "candidateId": null
+    },
+    "tags": ["client-relationship", "partnership", "future-opportunities"],
+    "attachments": [],
+    "visibility": "team",
+    "createdAt": "2024-01-08T16:30:00Z",
+    "updatedAt": "2024-01-08T16:30:00Z"
+  }
+]

@@ -1,0 +1,522 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbars for horizontal overflow */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 25 95% 95%;
+    --secondary-foreground: 25 95% 15%;
+    --muted: 25 95% 96%;
+    --muted-foreground: 25 95% 45%;
+    --accent: 25 95% 96%;
+    --accent-foreground: 25 95% 15%;
+    --destructive: 25 95% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 25 95% 90%;
+    --input: 25 95% 90%;
+    --ring: 25 95% 53%;
+    --radius: 0.5rem;
+    --chart-1: 25 95% 53%;
+    --chart-2: 25 85% 45%;
+    --chart-3: 25 75% 37%;
+    --chart-4: 25 65% 29%;
+    --chart-5: 25 55% 21%;
+    --sidebar-background: 25 95% 98%;
+    --sidebar-foreground: 25 95% 26%;
+    --sidebar-primary: 25 95% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 25 95% 96%;
+    --sidebar-accent-foreground: 25 95% 15%;
+    --sidebar-border: 25 95% 91%;
+    --sidebar-ring: 25 95% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 25 95% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 25 95% 15%;
+    --muted-foreground: 25 95% 64%;
+    --accent: 25 95% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 25 95% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 25 95% 15%;
+    --input: 25 95% 15%;
+    --ring: 25 95% 83%;
+    --chart-1: 25 95% 53%;
+    --chart-2: 25 85% 45%;
+    --chart-3: 25 75% 37%;
+    --chart-4: 25 65% 29%;
+    --chart-5: 25 55% 21%;
+    --sidebar-background: 25 95% 10%;
+    --sidebar-foreground: 25 95% 96%;
+    --sidebar-primary: 25 95% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 25 95% 16%;
+    --sidebar-accent-foreground: 25 95% 96%;
+    --sidebar-border: 25 95% 16%;
+    --sidebar-ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Fix sidebar layout conflicts */
+  .sidebar-provider {
+    @apply relative flex min-h-screen w-full;
+  }
+  
+  .sidebar-inset {
+    @apply flex-1 flex-col;
+    margin-left: var(--sidebar-width);
+    transition: margin-left 0.2s ease-in-out;
+  }
+  
+  /* Handle collapsed state - icon only */
+  .sidebar-inset[data-state="collapsed"] {
+    margin-left: var(--sidebar-width-icon);
+  }
+  
+  /* Ensure proper z-index stacking */
+  .sidebar {
+    z-index: 10;
+  }
+  
+  .sidebar-trigger {
+    z-index: 20;
+  }
+  
+  .sidebar-overlay {
+    z-index: 15;
+  }
+  
+  /* Fix content positioning */
+  .main-content {
+    @apply relative z-0;
+    min-height: calc(100vh - var(--header-height));
+  }
+  
+  /* Enhanced sidebar transitions */
+  .sidebar[data-state="collapsed"] {
+    width: var(--sidebar-width-icon);
+  }
+  
+  .sidebar[data-state="expanded"] {
+    width: var(--sidebar-width);
+  }
+  
+  /* Smooth transitions for sidebar content */
+  .sidebar-content {
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .sidebar[data-state="collapsed"] .sidebar-content {
+    opacity: 0;
+  }
+  
+  .sidebar[data-state="expanded"] .sidebar-content {
+    opacity: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar-inset {
+      margin-left: 0;
+    }
+    
+    .sidebar-inset.mobile-open {
+      margin-left: var(--sidebar-width-mobile);
+    }
+    
+    /* On mobile, use offcanvas behavior */
+    .sidebar[data-state="collapsed"] {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Careers Page Builder Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes stagger {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+  
+  .animate-zoom-in {
+    animation: zoom-in 0.7s ease-out forwards;
+  }
+  
+  .animate-stagger {
+    animation: stagger 0.6s ease-out forwards;
+  }
+  
+  /* Custom shadow for hover effects */
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Line clamp utility */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Mobile Preview Styles */
+  .mobile-preview {
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+  
+  .mobile-preview h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .mobile-preview h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .mobile-preview h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .mobile-preview p {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  .mobile-preview .text-lg {
+    font-size: 1rem !important;
+  }
+  
+  .mobile-preview .text-xl {
+    font-size: 1.125rem !important;
+  }
+  
+  .mobile-preview .text-2xl {
+    font-size: 1.25rem !important;
+  }
+  
+  .mobile-preview .text-4xl {
+    font-size: 2rem !important;
+  }
+  
+  .mobile-preview .text-6xl {
+    font-size: 2.5rem !important;
+  }
+  
+  .mobile-preview .text-8xl {
+    font-size: 3rem !important;
+  }
+  
+  .mobile-preview .px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .mobile-preview .px-8 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  
+  .mobile-preview .py-3 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  .mobile-preview .py-4 {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  
+  .mobile-preview .py-16 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .mobile-preview .py-20 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  
+  .mobile-preview .space-x-4 > * + * {
+    margin-left: 0.5rem !important;
+  }
+  
+  .mobile-preview .space-x-6 > * + * {
+    margin-left: 0.75rem !important;
+  }
+  
+  .mobile-preview .space-y-4 > * + * {
+    margin-top: 0.5rem !important;
+  }
+  
+  .mobile-preview .space-y-6 > * + * {
+    margin-top: 0.75rem !important;
+  }
+  
+  .mobile-preview .gap-4 {
+    gap: 0.5rem !important;
+  }
+  
+  .mobile-preview .gap-6 {
+    gap: 0.75rem !important;
+  }
+  
+  .mobile-preview .gap-8 {
+    gap: 1rem !important;
+  }
+  
+  .mobile-preview .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .flex-row {
+    flex-direction: column !important;
+  }
+  
+  .mobile-preview .sm\\:flex-row {
+    flex-direction: column !important;
+  }
+  
+  .mobile-preview .md\\:flex-row {
+    flex-direction: column !important;
+  }
+  
+  .mobile-preview .lg\\:flex-row {
+    flex-direction: column !important;
+  }
+  
+  .mobile-preview .sm\\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .md\\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .lg\\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .sm\\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .md\\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .lg\\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .sm\\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .md\\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .lg\\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .mobile-preview .hidden {
+    display: none !important;
+  }
+  
+  .mobile-preview .sm\\:block {
+    display: none !important;
+  }
+  
+  .mobile-preview .md\\:block {
+    display: none !important;
+  }
+  
+  .mobile-preview .lg\\:block {
+    display: none !important;
+  }
+  
+  .mobile-preview .sm\\:flex {
+    display: none !important;
+  }
+  
+  .mobile-preview .md\\:flex {
+    display: none !important;
+  }
+  
+  .mobile-preview .lg\\:flex {
+    display: none !important;
+  }
+  
+  .mobile-preview .sm\\:inline {
+    display: none !important;
+  }
+  
+  .mobile-preview .md\\:inline {
+    display: none !important;
+  }
+  
+  .mobile-preview .lg\\:inline {
+    display: none !important;
+  }
+  
+  .mobile-preview .sm\\:hidden {
+    display: block !important;
+  }
+  
+  .mobile-preview .md\\:hidden {
+    display: block !important;
+  }
+  
+  .mobile-preview .lg\\:hidden {
+    display: block !important;
+  }
+  
+  .mobile-preview .w-full {
+    width: 100% !important;
+  }
+  
+  .mobile-preview .sm\\:w-auto {
+    width: 100% !important;
+  }
+  
+  .mobile-preview .md\\:w-auto {
+    width: 100% !important;
+  }
+  
+  .mobile-preview .lg\\:w-auto {
+    width: 100% !important;
+  }
+  
+  /* Careers Page Theme Isolation */
+  .careers-page {
+    /* Default light theme for careers page */
+    --background: 0 0% 100% !important;
+    --foreground: 0 0% 3.9% !important;
+    --card: 0 0% 100% !important;
+    --card-foreground: 0 0% 3.9% !important;
+    --popover: 0 0% 100% !important;
+    --popover-foreground: 0 0% 3.9% !important;
+    --primary: 25 95% 53% !important;
+    --primary-foreground: 0 0% 98% !important;
+    --secondary: 25 95% 95% !important;
+    --secondary-foreground: 25 95% 15% !important;
+    --muted: 25 95% 96% !important;
+    --muted-foreground: 25 95% 45% !important;
+    --accent: 25 95% 96% !important;
+    --accent-foreground: 25 95% 15% !important;
+    --destructive: 25 95% 60% !important;
+    --destructive-foreground: 0 0% 98% !important;
+    --border: 25 95% 90% !important;
+    --input: 25 95% 90% !important;
+    --ring: 25 95% 53% !important;
+    --radius: 0.5rem !important;
+    --chart-1: 25 95% 53% !important;
+    --chart-2: 25 85% 45% !important;
+    --chart-3: 25 75% 37% !important;
+    --chart-4: 25 65% 29% !important;
+    --chart-5: 25 55% 21% !important;
+    --sidebar-background: 25 95% 98% !important;
+    --sidebar-foreground: 25 95% 26% !important;
+    --sidebar-primary: 25 95% 10% !important;
+    --sidebar-primary-foreground: 0 0% 98% !important;
+    --sidebar-accent: 25 95% 96% !important;
+    --sidebar-accent-foreground: 25 95% 15% !important;
+    --sidebar-border: 25 95% 91% !important;
+    --sidebar-ring: 25 95% 53% !important;
+  }
+  
+}

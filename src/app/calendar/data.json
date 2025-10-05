@@ -1,0 +1,272 @@
+[
+  {
+    "id": "evt-1001",
+    "title": "Frontend Interview - Sara Ahmed",
+    "type": "interview",
+    "status": "scheduled",
+    "start": "2024-01-15T10:00:00+01:00",
+    "end": "2024-01-15T11:00:00+01:00",
+    "timezone": "Africa/Casablanca",
+    "recurrence": null,
+    "organizer": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "email": "anwar@jobzyn.com"
+    },
+    "attendees": [
+      {
+        "id": "user-124",
+        "name": "Fatima Alami",
+        "email": "fatima@jobzyn.com",
+        "role": "interviewer",
+        "rsvp": "accepted"
+      },
+      {
+        "id": "cand-101",
+        "name": "Sara Ahmed",
+        "email": "sara.ahmed@example.com",
+        "role": "candidate",
+        "rsvp": "tentative",
+        "external": true
+      }
+    ],
+    "location": {
+      "kind": "video",
+      "provider": "google_meet",
+      "url": "https://meet.google.com/abc-defg-hij"
+    },
+    "buffers": {
+      "beforeMin": 10,
+      "afterMin": 10
+    },
+    "roundRobin": {
+      "enabled": false,
+      "poolId": null,
+      "assignedFromPool": null
+    },
+    "related": {
+      "clientId": "client-001",
+      "jobId": "job-101",
+      "candidateId": "cand-101"
+    },
+    "agenda": "Intro 10m, Technical 40m, Q&A 10m",
+    "attachments": [
+      { "id": "file-88", "name": "interview-kit.pdf", "url": "/files/interview-kit.pdf" }
+    ],
+    "reminders": [
+      { "method": "email", "minutesBefore": 1440 },
+      { "method": "email", "minutesBefore": 60 },
+      { "method": "in_app", "minutesBefore": 10 }
+    ],
+    "createdAt": "2024-01-14T09:10:00Z",
+    "updatedAt": "2024-01-14T12:00:00Z",
+    "audit": [
+      { "at": "2024-01-14T09:10:00Z", "by": "user-123", "action": "created" },
+      { "at": "2024-01-14T12:00:00Z", "by": "user-124", "action": "rsvp_updated" }
+    ]
+  },
+  {
+    "id": "evt-1002",
+    "title": "Client Intake - Microsoft",
+    "type": "client_meeting",
+    "status": "scheduled",
+    "start": "2024-01-16T15:00:00+01:00",
+    "end": "2024-01-16T16:00:00+01:00",
+    "timezone": "Africa/Casablanca",
+    "recurrence": {
+      "rrule": "FREQ=WEEKLY;BYDAY=WE;COUNT=4",
+      "exdates": []
+    },
+    "organizer": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "email": "anwar@jobzyn.com"
+    },
+    "attendees": [
+      { "id": "user-125", "name": "Youssef Tazi", "email": "youssef@jobzyn.com", "role": "recruiter", "rsvp": "accepted" },
+      { "id": "client-001-contact", "name": "Sarah Othmani", "email": "sarah.othmani@microsoft.com", "role": "client", "rsvp": "no_response", "external": true }
+    ],
+    "location": {
+      "kind": "onsite",
+      "room": "Casablanca - Room Atlas",
+      "address": "Avenue Mohammed V, Casablanca, Morocco"
+    },
+    "buffers": { "beforeMin": 15, "afterMin": 0 },
+    "roundRobin": { "enabled": false, "poolId": null, "assignedFromPool": null },
+    "related": { "clientId": "client-001", "jobId": null, "candidateId": null },
+    "agenda": "Role intake, requirements, approval path",
+    "attachments": [],
+    "reminders": [
+      { "method": "email", "minutesBefore": 1440 },
+      { "method": "in_app", "minutesBefore": 30 }
+    ],
+    "createdAt": "2024-01-14T11:00:00Z",
+    "updatedAt": "2024-01-14T11:00:00Z",
+    "audit": [
+      { "at": "2024-01-14T11:00:00Z", "by": "user-123", "action": "created" }
+    ]
+  },
+  {
+    "id": "evt-1003",
+    "title": "Team Standup",
+    "type": "internal",
+    "status": "scheduled",
+    "start": "2024-01-15T09:00:00+01:00",
+    "end": "2024-01-15T09:30:00+01:00",
+    "timezone": "Africa/Casablanca",
+    "recurrence": {
+      "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR",
+      "exdates": []
+    },
+    "organizer": {
+      "id": "user-123",
+      "name": "Anwar Bahou",
+      "email": "anwar@jobzyn.com"
+    },
+    "attendees": [
+      { "id": "user-123", "name": "Anwar Bahou", "email": "anwar@jobzyn.com", "role": "organizer", "rsvp": "accepted" },
+      { "id": "user-124", "name": "Fatima Alami", "email": "fatima@jobzyn.com", "role": "attendee", "rsvp": "accepted" },
+      { "id": "user-125", "name": "Youssef Tazi", "email": "youssef@jobzyn.com", "role": "attendee", "rsvp": "accepted" },
+      { "id": "user-126", "name": "Karim El Fassi", "email": "karim@jobzyn.com", "role": "attendee", "rsvp": "accepted" },
+      { "id": "user-127", "name": "Nadia Berrada", "email": "nadia@jobzyn.com", "role": "attendee", "rsvp": "accepted" }
+    ],
+    "location": {
+      "kind": "video",
+      "provider": "zoom",
+      "url": "https://zoom.us/j/123456789"
+    },
+    "buffers": { "beforeMin": 0, "afterMin": 0 },
+    "roundRobin": { "enabled": false, "poolId": null, "assignedFromPool": null },
+    "related": { "clientId": null, "jobId": null, "candidateId": null },
+    "agenda": "Daily standup - progress updates, blockers, priorities",
+    "attachments": [],
+    "reminders": [
+      { "method": "in_app", "minutesBefore": 5 }
+    ],
+    "createdAt": "2024-01-10T08:00:00Z",
+    "updatedAt": "2024-01-10T08:00:00Z",
+    "audit": [
+      { "at": "2024-01-10T08:00:00Z", "by": "user-123", "action": "created" }
+    ]
+  },
+  {
+    "id": "evt-1004",
+    "title": "Tesla Project Kickoff",
+    "type": "intake",
+    "status": "scheduled",
+    "start": "2024-01-17T14:00:00+01:00",
+    "end": "2024-01-17T15:30:00+01:00",
+    "timezone": "Africa/Casablanca",
+    "recurrence": null,
+    "organizer": {
+      "id": "user-125",
+      "name": "Youssef Tazi",
+      "email": "youssef@jobzyn.com"
+    },
+    "attendees": [
+      { "id": "user-125", "name": "Youssef Tazi", "email": "youssef@jobzyn.com", "role": "organizer", "rsvp": "accepted" },
+      { "id": "client-003-contact", "name": "Aicha Mansouri", "email": "aicha.mansouri@tesla.com", "role": "client", "rsvp": "accepted", "external": true }
+    ],
+    "location": {
+      "kind": "video",
+      "provider": "teams",
+      "url": "https://teams.microsoft.com/l/meetup-join/123456789"
+    },
+    "buffers": { "beforeMin": 15, "afterMin": 15 },
+    "roundRobin": { "enabled": false, "poolId": null, "assignedFromPool": null },
+    "related": { "clientId": "client-003", "jobId": "job-301", "candidateId": null },
+    "agenda": "Project overview, timeline, deliverables, communication plan",
+    "attachments": [
+      { "id": "file-89", "name": "project-brief.pdf", "url": "/files/project-brief.pdf" }
+    ],
+    "reminders": [
+      { "method": "email", "minutesBefore": 1440 },
+      { "method": "email", "minutesBefore": 60 },
+      { "method": "in_app", "minutesBefore": 15 }
+    ],
+    "createdAt": "2024-01-13T10:00:00Z",
+    "updatedAt": "2024-01-13T10:00:00Z",
+    "audit": [
+      { "at": "2024-01-13T10:00:00Z", "by": "user-125", "action": "created" }
+    ]
+  },
+  {
+    "id": "evt-1005",
+    "title": "Goldman Sachs Compliance Review",
+    "type": "client_meeting",
+    "status": "scheduled",
+    "start": "2024-01-18T11:00:00+01:00",
+    "end": "2024-01-18T12:00:00+01:00",
+    "timezone": "Africa/Casablanca",
+    "recurrence": null,
+    "organizer": {
+      "id": "user-126",
+      "name": "Karim El Fassi",
+      "email": "karim@jobzyn.com"
+    },
+    "attendees": [
+      { "id": "user-126", "name": "Karim El Fassi", "email": "karim@jobzyn.com", "role": "organizer", "rsvp": "accepted" },
+      { "id": "client-004-contact", "name": "Laila Chakir", "email": "laila.chakir@goldmansachs.com", "role": "client", "rsvp": "tentative", "external": true }
+    ],
+    "location": {
+      "kind": "onsite",
+      "room": "Rabat - Conference Room",
+      "address": "Avenue Hassan II, Rabat, Morocco"
+    },
+    "buffers": { "beforeMin": 30, "afterMin": 30 },
+    "roundRobin": { "enabled": false, "poolId": null, "assignedFromPool": null },
+    "related": { "clientId": "client-004", "jobId": "job-401", "candidateId": null },
+    "agenda": "Compliance requirements review, background check process, documentation",
+    "attachments": [
+      { "id": "file-90", "name": "compliance-checklist.pdf", "url": "/files/compliance-checklist.pdf" }
+    ],
+    "reminders": [
+      { "method": "email", "minutesBefore": 1440 },
+      { "method": "email", "minutesBefore": 60 },
+      { "method": "sms", "minutesBefore": 30 }
+    ],
+    "createdAt": "2024-01-12T14:00:00Z",
+    "updatedAt": "2024-01-12T14:00:00Z",
+    "audit": [
+      { "at": "2024-01-12T14:00:00Z", "by": "user-126", "action": "created" }
+    ]
+  },
+  {
+    "id": "evt-1006",
+    "title": "Coursera Curriculum Planning",
+    "type": "internal",
+    "status": "scheduled",
+    "start": "2024-01-19T16:00:00+01:00",
+    "end": "2024-01-19T17:00:00+01:00",
+    "timezone": "Africa/Casablanca",
+    "recurrence": null,
+    "organizer": {
+      "id": "user-127",
+      "name": "Nadia Berrada",
+      "email": "nadia@jobzyn.com"
+    },
+    "attendees": [
+      { "id": "user-127", "name": "Nadia Berrada", "email": "nadia@jobzyn.com", "role": "organizer", "rsvp": "accepted" },
+      { "id": "user-123", "name": "Anwar Bahou", "email": "anwar@jobzyn.com", "role": "attendee", "rsvp": "accepted" }
+    ],
+    "location": {
+      "kind": "video",
+      "provider": "google_meet",
+      "url": "https://meet.google.com/xyz-abc-def"
+    },
+    "buffers": { "beforeMin": 0, "afterMin": 0 },
+    "roundRobin": { "enabled": false, "poolId": null, "assignedFromPool": null },
+    "related": { "clientId": "client-005", "jobId": "job-502", "candidateId": null },
+    "agenda": "Curriculum development planning, learning objectives, assessment criteria",
+    "attachments": [],
+    "reminders": [
+      { "method": "email", "minutesBefore": 60 },
+      { "method": "in_app", "minutesBefore": 10 }
+    ],
+    "createdAt": "2024-01-11T09:00:00Z",
+    "updatedAt": "2024-01-11T09:00:00Z",
+    "audit": [
+      { "at": "2024-01-11T09:00:00Z", "by": "user-127", "action": "created" }
+    ]
+  }
+]

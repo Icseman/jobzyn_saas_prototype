@@ -1,0 +1,456 @@
+{
+  "meta": {
+    "generatedAt": "2025-09-30T15:30:00Z",
+    "timezone": "Africa/Casablanca",
+    "reportPeriod": {
+      "from": "2025-09-01",
+      "to": "2025-09-30"
+    },
+    "compareTo": {
+      "from": "2025-08-01",
+      "to": "2025-08-31"
+    }
+  },
+  "dashboard": {
+    "overview": {
+      "jobsOpen": {
+        "current": 24,
+        "previous": 18,
+        "change": "+33.3%"
+      },
+      "candidatesAdded": {
+        "current": 1247,
+        "previous": 892,
+        "change": "+39.8%"
+      },
+      "interviewsScheduled": {
+        "current": 156,
+        "previous": 134,
+        "change": "+16.4%"
+      },
+      "hiresMade": {
+        "current": 23,
+        "previous": 19,
+        "change": "+21.1%"
+      }
+    },
+    "quickFilters": {
+      "timeRanges": ["weekly", "monthly", "quarterly", "custom"],
+      "selectedRange": "monthly"
+    }
+  },
+  "jobPerformance": {
+    "jobs": [
+      {
+        "id": "job-101",
+        "title": "Senior Frontend Developer",
+        "applicationsReceived": 120,
+        "shortlistedCandidates": 24,
+        "interviewsScheduled": 12,
+        "hiresMade": 2,
+        "conversionRate": 1.67,
+        "timeToFill": 28
+      },
+      {
+        "id": "job-102",
+        "title": "Product Manager",
+        "applicationsReceived": 89,
+        "shortlistedCandidates": 18,
+        "interviewsScheduled": 9,
+        "hiresMade": 1,
+        "conversionRate": 1.12,
+        "timeToFill": 35
+      },
+      {
+        "id": "job-103",
+        "title": "UX Designer",
+        "applicationsReceived": 76,
+        "shortlistedCandidates": 15,
+        "interviewsScheduled": 8,
+        "hiresMade": 1,
+        "conversionRate": 1.32,
+        "timeToFill": 31
+      }
+    ],
+    "conversionFunnel": {
+      "apply": 1247,
+      "shortlist": 234,
+      "interview": 156,
+      "hire": 23
+    }
+  },
+  "candidatePipeline": {
+    "stages": [
+      {
+        "name": "Applied",
+        "count": 1247,
+        "dropOffRate": 0
+      },
+      {
+        "name": "Screened",
+        "count": 234,
+        "dropOffRate": 81.2
+      },
+      {
+        "name": "Interviewed",
+        "count": 156,
+        "dropOffRate": 33.3
+      },
+      {
+        "name": "Offered",
+        "count": 28,
+        "dropOffRate": 82.1
+      },
+      {
+        "name": "Hired",
+        "count": 23,
+        "dropOffRate": 17.9
+      },
+      {
+        "name": "Rejected",
+        "count": 1204,
+        "dropOffRate": 96.5
+      }
+    ],
+    "stageMovement": [
+      {
+        "from": "Applied",
+        "to": "Screened",
+        "count": 234,
+        "rate": 18.8
+      },
+      {
+        "from": "Screened",
+        "to": "Interviewed",
+        "count": 156,
+        "rate": 66.7
+      },
+      {
+        "from": "Interviewed",
+        "to": "Offered",
+        "count": 28,
+        "rate": 17.9
+      },
+      {
+        "from": "Offered",
+        "to": "Hired",
+        "count": 23,
+        "rate": 82.1
+      }
+    ]
+  },
+  "recruiterActivity": {
+    "recruiters": [
+      {
+        "id": "user-123",
+        "name": "Anwar Bahou",
+        "candidatesAdded": 456,
+        "candidatesContacted": 234,
+        "interviewsConducted": 45,
+        "hiresMade": 8,
+        "productivityScore": 92
+      },
+      {
+        "id": "user-124",
+        "name": "Ismail Abdellaoui",
+        "candidatesAdded": 389,
+        "candidatesContacted": 198,
+        "interviewsConducted": 38,
+        "hiresMade": 7,
+        "productivityScore": 88
+      },
+      {
+        "id": "user-125",
+        "name": "Wajd Bellazrak",
+        "candidatesAdded": 402,
+        "candidatesContacted": 201,
+        "interviewsConducted": 42,
+        "hiresMade": 8,
+        "productivityScore": 90
+      }
+    ],
+    "workloadDistribution": {
+      "totalCandidates": 1247,
+      "averagePerRecruiter": 415.7,
+      "workloadBalance": 94.2
+    }
+  },
+  "clientPerformance": {
+    "clients": [
+      {
+        "id": "client-001",
+        "name": "TechNova Solutions",
+        "jobsPosted": 8,
+        "candidatesSubmitted": 234,
+        "interviewsScheduled": 45,
+        "hiresMade": 6,
+        "interviewToHireRatio": 13.3,
+        "satisfactionScore": 4.8,
+        "engagementLevel": "High"
+      },
+      {
+        "id": "client-002",
+        "name": "Digital Innovations",
+        "jobsPosted": 6,
+        "candidatesSubmitted": 189,
+        "interviewsScheduled": 32,
+        "hiresMade": 4,
+        "interviewToHireRatio": 12.5,
+        "satisfactionScore": 4.6,
+        "engagementLevel": "High"
+      },
+      {
+        "id": "client-003",
+        "name": "StartupXYZ",
+        "jobsPosted": 4,
+        "candidatesSubmitted": 156,
+        "interviewsScheduled": 28,
+        "hiresMade": 3,
+        "interviewToHireRatio": 10.7,
+        "satisfactionScore": 4.4,
+        "engagementLevel": "Medium"
+      }
+    ],
+    "overallMetrics": {
+      "totalClients": 12,
+      "activeClients": 8,
+      "averageSatisfaction": 4.6,
+      "totalJobsPosted": 24
+    }
+  },
+  "sourceEffectiveness": {
+    "sources": [
+      {
+        "name": "LinkedIn",
+        "applications": 456,
+        "hires": 12,
+        "hireRate": 2.63,
+        "qualityScore": 8.5,
+        "timeToFill": 25,
+        "costPerHire": 1200
+      },
+      {
+        "name": "Indeed",
+        "applications": 389,
+        "hires": 6,
+        "hireRate": 1.54,
+        "qualityScore": 7.2,
+        "timeToFill": 32,
+        "costPerHire": 800
+      },
+      {
+        "name": "Referrals",
+        "applications": 89,
+        "hires": 3,
+        "hireRate": 3.37,
+        "qualityScore": 9.1,
+        "timeToFill": 18,
+        "costPerHire": 0
+      },
+      {
+        "name": "Career Site",
+        "applications": 234,
+        "hires": 2,
+        "hireRate": 0.85,
+        "qualityScore": 6.8,
+        "timeToFill": 28,
+        "costPerHire": 400
+      },
+      {
+        "name": "Manual Import",
+        "applications": 79,
+        "hires": 0,
+        "hireRate": 0,
+        "qualityScore": 5.2,
+        "timeToFill": 45,
+        "costPerHire": 200
+      }
+    ],
+    "performanceMetrics": {
+      "bestPerformingSource": "Referrals",
+      "highestVolumeSource": "LinkedIn",
+      "mostCostEffective": "Referrals",
+      "fastestTimeToFill": "Referrals"
+    }
+  },
+  "timeToHireCost": {
+    "timeToHire": {
+      "average": 28.5,
+      "median": 25,
+      "byRole": [
+        {
+          "role": "Frontend Developer",
+          "average": 25,
+          "median": 22
+        },
+        {
+          "role": "Product Manager",
+          "average": 35,
+          "median": 32
+        },
+        {
+          "role": "UX Designer",
+          "average": 31,
+          "median": 28
+        }
+      ],
+      "trends": [
+        { "month": "2025-07", "days": 32 },
+        { "month": "2025-08", "days": 29 },
+        { "month": "2025-09", "days": 28.5 }
+      ]
+    },
+    "costPerHire": {
+      "average": 850,
+      "bySource": [
+        {
+          "source": "LinkedIn",
+          "cost": 1200
+        },
+        {
+          "source": "Indeed",
+          "cost": 800
+        },
+        {
+          "source": "Career Site",
+          "cost": 400
+        },
+        {
+          "source": "Referrals",
+          "cost": 0
+        }
+      ],
+      "breakdown": {
+        "recruitmentCosts": 650,
+        "interviewCosts": 120,
+        "onboardingCosts": 80
+      }
+    }
+  },
+  "diversityInclusion": {
+    "demographics": {
+      "gender": [
+        { "category": "Male", "count": 678, "percentage": 54.4 },
+        { "category": "Female", "count": 456, "percentage": 36.6 },
+        { "category": "Non-binary", "count": 67, "percentage": 5.4 },
+        { "category": "Prefer not to say", "count": 46, "percentage": 3.7 }
+      ],
+      "location": [
+        { "category": "North America", "count": 456, "percentage": 36.6 },
+        { "category": "Europe", "count": 389, "percentage": 31.2 },
+        { "category": "Asia", "count": 234, "percentage": 18.8 },
+        { "category": "Other", "count": 168, "percentage": 13.5 }
+      ],
+      "experienceLevel": [
+        { "category": "Entry Level (0-2 years)", "count": 234, "percentage": 18.8 },
+        { "category": "Mid Level (3-5 years)", "count": 456, "percentage": 36.6 },
+        { "category": "Senior Level (6-10 years)", "count": 389, "percentage": 31.2 },
+        { "category": "Executive (10+ years)", "count": 168, "percentage": 13.5 }
+      ],
+      "education": [
+        { "category": "Bachelor's Degree", "count": 678, "percentage": 54.4 },
+        { "category": "Master's Degree", "count": 389, "percentage": 31.2 },
+        { "category": "PhD", "count": 89, "percentage": 7.1 },
+        { "category": "Other", "count": 91, "percentage": 7.3 }
+      ]
+    },
+    "diversityGoals": {
+      "genderBalance": 45.6,
+      "targetGenderBalance": 50,
+      "ethnicDiversity": 32.4,
+      "targetEthnicDiversity": 40,
+      "inclusivityScore": 78.5
+    },
+    "hiringBias": {
+      "genderBias": 2.3,
+      "ethnicityBias": 1.8,
+      "ageBias": 3.1,
+      "overallBiasScore": 2.4
+    }
+  },
+  "exportSharing": {
+    "formats": ["PDF", "Excel", "CSV"],
+    "scheduledReports": [
+      {
+        "id": "report-001",
+        "name": "Weekly Hiring Summary",
+        "frequency": "weekly",
+        "recipients": ["hr@company.com", "recruiters@company.com"],
+        "lastSent": "2025-09-23T09:00:00Z"
+      },
+      {
+        "id": "report-002",
+        "name": "Monthly Client Performance",
+        "frequency": "monthly",
+        "recipients": ["clients@company.com"],
+        "lastSent": "2025-09-01T10:00:00Z"
+      }
+    ],
+    "sharingOptions": {
+      "internalSharing": true,
+      "clientSharing": true,
+      "publicSharing": false,
+      "passwordProtection": true
+    }
+  },
+  "aiInsights": {
+    "recommendations": [
+      {
+        "type": "source_optimization",
+        "title": "LinkedIn candidates have 25% higher hire rate than Indeed this month",
+        "description": "Consider increasing LinkedIn budget allocation for better ROI",
+        "priority": "high",
+        "impact": "Increase hire rate by 15-20%"
+      },
+      {
+        "type": "pipeline_bottleneck",
+        "title": "Interview-to-offer conversion rate is below industry average",
+        "description": "Review interview process and candidate evaluation criteria",
+        "priority": "medium",
+        "impact": "Improve conversion rate by 10-15%"
+      },
+      {
+        "type": "diversity_improvement",
+        "title": "Gender diversity in tech roles is improving but needs attention",
+        "description": "Implement targeted outreach programs for underrepresented groups",
+        "priority": "medium",
+        "impact": "Achieve 50% gender balance target"
+      }
+    ],
+    "predictiveTrends": [
+      {
+        "trend": "hiring_bottleneck",
+        "description": "Expected increase in time-to-fill for senior roles in Q4",
+        "confidence": 85,
+        "recommendation": "Start sourcing senior candidates now"
+      },
+      {
+        "trend": "source_performance",
+        "description": "Referral quality is declining, may need process review",
+        "confidence": 72,
+        "recommendation": "Update referral guidelines and incentives"
+      },
+      {
+        "trend": "client_satisfaction",
+        "description": "Client satisfaction scores trending upward",
+        "confidence": 90,
+        "recommendation": "Maintain current service levels"
+      }
+    ],
+    "anomalies": [
+      {
+        "type": "unusual_pattern",
+        "description": "Sudden spike in applications from career site",
+        "severity": "low",
+        "action": "Monitor for quality"
+      },
+      {
+        "type": "performance_drop",
+        "description": "Interview no-show rate increased by 40%",
+        "severity": "medium",
+        "action": "Review scheduling process"
+      }
+    ]
+  }
+}
+

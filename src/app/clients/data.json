@@ -1,0 +1,400 @@
+[
+  {
+    "id": "client-001",
+    "name": "Microsoft",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+    "industry": "Software",
+    "website": "https://www.microsoft.com",
+    "size": 250,
+    "location": {
+      "city": "Casablanca",
+      "country": "Morocco"
+    },
+    "owner": {
+      "id": "user-123",
+      "name": "Anwar Bahou"
+    },
+    "contact": {
+      "name": "Sarah Othmani",
+      "title": "HR Director",
+      "email": "sarah.othmani@microsoft.com",
+      "phone": "+212600112233",
+      "linkedin": "https://linkedin.com/in/sarahothmani"
+    },
+    "jobs": [
+      {
+        "id": "job-101",
+        "title": "Frontend Developer",
+        "status": "open",
+        "openingsTotal": 2,
+        "openingsFilled": 1
+      },
+      {
+        "id": "job-102",
+        "title": "Product Designer",
+        "status": "closed",
+        "openingsTotal": 1,
+        "openingsFilled": 1
+      }
+    ],
+    "tags": ["priority", "long-term"],
+    "notes": "TechNova is a strategic partner, prefers fast hiring cycles.",
+    "comments": [
+      {
+        "id": "comment-001",
+        "author": "Anwar Bahou",
+        "content": "Initial meeting went very well. Sarah is very responsive and knows exactly what they need.",
+        "timestamp": "2024-01-15T10:30:00Z",
+        "type": "meeting"
+      },
+      {
+        "id": "comment-002",
+        "author": "Anwar Bahou",
+        "content": "Follow-up call scheduled for next week to discuss the Frontend Developer role.",
+        "timestamp": "2024-01-16T14:20:00Z",
+        "type": "call"
+      }
+    ],
+    "files": [
+      {
+        "id": "file-001",
+        "name": "TechNova_Company_Profile.pdf",
+        "type": "application/pdf",
+        "size": 2048576,
+        "uploadedBy": "Anwar Bahou",
+        "uploadedAt": "2024-01-15T10:30:00Z",
+        "url": "/files/technova_profile.pdf"
+      },
+      {
+        "id": "file-002",
+        "name": "Job_Requirements_Frontend.docx",
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "size": 512000,
+        "uploadedBy": "Sarah Othmani",
+        "uploadedAt": "2024-01-16T09:15:00Z",
+        "url": "/files/frontend_requirements.docx"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg-001",
+        "from": "Anwar Bahou",
+        "to": "Sarah Othmani",
+        "subject": "Re: Frontend Developer Position",
+        "content": "Hi Sarah, thank you for the detailed requirements. I'll start sourcing candidates immediately.",
+        "timestamp": "2024-01-16T11:30:00Z",
+        "type": "email",
+        "status": "sent"
+      },
+      {
+        "id": "msg-002",
+        "from": "Sarah Othmani",
+        "to": "Anwar Bahou",
+        "subject": "Re: Frontend Developer Position",
+        "content": "Perfect! Looking forward to seeing the candidates. We need someone with React and TypeScript experience.",
+        "timestamp": "2024-01-16T15:45:00Z",
+        "type": "email",
+        "status": "received"
+      }
+    ]
+  },
+  {
+    "id": "client-002",
+    "name": "Johnson & Johnson",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/76/Johnson_%26_Johnson_logo.svg",
+    "industry": "Healthcare",
+    "website": "https://www.jnj.com",
+    "size": 150,
+    "location": {
+      "city": "Rabat",
+      "country": "Morocco"
+    },
+    "owner": {
+      "id": "user-124",
+      "name": "Fatima Alami"
+    },
+    "contact": {
+      "name": "Dr. Ahmed Benali",
+      "title": "Medical Director",
+      "email": "ahmed.benali@jnj.com",
+      "phone": "+212537123456",
+      "linkedin": "https://linkedin.com/in/ahmedbenali"
+    },
+    "jobs": [
+      {
+        "id": "job-201",
+        "title": "Senior Nurse",
+        "status": "open",
+        "openingsTotal": 3,
+        "openingsFilled": 0
+      },
+      {
+        "id": "job-202",
+        "title": "Medical Technician",
+        "status": "open",
+        "openingsTotal": 2,
+        "openingsFilled": 1
+      }
+    ],
+    "tags": ["healthcare", "urgent"],
+    "notes": "High priority client, expanding rapidly. Need quick turnaround.",
+    "comments": [
+      {
+        "id": "comment-003",
+        "author": "Fatima Alami",
+        "content": "Dr. Benali is very professional and has clear requirements for the nursing positions.",
+        "timestamp": "2024-01-14T09:00:00Z",
+        "type": "meeting"
+      }
+    ],
+    "files": [
+      {
+        "id": "file-003",
+        "name": "MediCare_Job_Descriptions.pdf",
+        "type": "application/pdf",
+        "size": 1536000,
+        "uploadedBy": "Dr. Ahmed Benali",
+        "uploadedAt": "2024-01-14T09:00:00Z",
+        "url": "/files/medicare_jobs.pdf"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg-003",
+        "from": "Fatima Alami",
+        "to": "Dr. Ahmed Benali",
+        "subject": "Re: Senior Nurse Position",
+        "content": "Thank you for the detailed job description. I'll start screening candidates this week.",
+        "timestamp": "2024-01-14T16:30:00Z",
+        "type": "email",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "client-003",
+    "name": "Tesla",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tesla_T_symbol.svg",
+    "industry": "Energy",
+    "website": "https://www.tesla.com",
+    "size": 500,
+    "location": {
+      "city": "Marrakech",
+      "country": "Morocco"
+    },
+    "owner": {
+      "id": "user-125",
+      "name": "Youssef Tazi"
+    },
+    "contact": {
+      "name": "Aicha Mansouri",
+      "title": "Operations Manager",
+      "email": "aicha.mansouri@tesla.com",
+      "phone": "+212524789012",
+      "linkedin": "https://linkedin.com/in/aichamansouri"
+    },
+    "jobs": [
+      {
+        "id": "job-301",
+        "title": "Solar Engineer",
+        "status": "open",
+        "openingsTotal": 2,
+        "openingsFilled": 0
+      },
+      {
+        "id": "job-302",
+        "title": "Project Manager",
+        "status": "closed",
+        "openingsTotal": 1,
+        "openingsFilled": 1
+      },
+      {
+        "id": "job-303",
+        "title": "Environmental Consultant",
+        "status": "draft",
+        "openingsTotal": 1,
+        "openingsFilled": 0
+      }
+    ],
+    "tags": ["renewable", "sustainability"],
+    "notes": "Leading renewable energy company, excellent partnership potential.",
+    "comments": [
+      {
+        "id": "comment-004",
+        "author": "Youssef Tazi",
+        "content": "Aicha is very knowledgeable about renewable energy. Great partnership opportunity.",
+        "timestamp": "2024-01-13T11:00:00Z",
+        "type": "meeting"
+      }
+    ],
+    "files": [
+      {
+        "id": "file-004",
+        "name": "GreenEnergy_Projects_Overview.pdf",
+        "type": "application/pdf",
+        "size": 3072000,
+        "uploadedBy": "Aicha Mansouri",
+        "uploadedAt": "2024-01-13T11:00:00Z",
+        "url": "/files/greenenergy_projects.pdf"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg-004",
+        "from": "Youssef Tazi",
+        "to": "Aicha Mansouri",
+        "subject": "Re: Solar Engineer Position",
+        "content": "I have several qualified candidates for the Solar Engineer role. When would be a good time to schedule interviews?",
+        "timestamp": "2024-01-13T14:30:00Z",
+        "type": "email",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "client-004",
+    "name": "Goldman Sachs",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Goldman_Sachs_logo.svg",
+    "industry": "Finance",
+    "website": "https://www.goldmansachs.com",
+    "size": 300,
+    "location": {
+      "city": "Casablanca",
+      "country": "Morocco"
+    },
+    "owner": {
+      "id": "user-126",
+      "name": "Karim El Fassi"
+    },
+    "contact": {
+      "name": "Laila Chakir",
+      "title": "HR Manager",
+      "email": "laila.chakir@goldmansachs.com",
+      "phone": "+212522345678",
+      "linkedin": "https://linkedin.com/in/lailachakir"
+    },
+    "jobs": [
+      {
+        "id": "job-401",
+        "title": "Financial Analyst",
+        "status": "open",
+        "openingsTotal": 2,
+        "openingsFilled": 1
+      },
+      {
+        "id": "job-402",
+        "title": "Risk Manager",
+        "status": "open",
+        "openingsTotal": 1,
+        "openingsFilled": 0
+      }
+    ],
+    "tags": ["finance", "compliance"],
+    "notes": "Strict compliance requirements, thorough background checks needed.",
+    "comments": [
+      {
+        "id": "comment-005",
+        "author": "Karim El Fassi",
+        "content": "Laila is very detail-oriented and has specific requirements for financial roles.",
+        "timestamp": "2024-01-12T13:00:00Z",
+        "type": "meeting"
+      }
+    ],
+    "files": [
+      {
+        "id": "file-005",
+        "name": "FinanceFirst_Compliance_Requirements.pdf",
+        "type": "application/pdf",
+        "size": 1024000,
+        "uploadedBy": "Laila Chakir",
+        "uploadedAt": "2024-01-12T13:00:00Z",
+        "url": "/files/financefirst_compliance.pdf"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg-005",
+        "from": "Karim El Fassi",
+        "to": "Laila Chakir",
+        "subject": "Re: Financial Analyst Candidates",
+        "content": "I have 3 strong candidates for the Financial Analyst position. All have CFA certifications.",
+        "timestamp": "2024-01-12T16:45:00Z",
+        "type": "email",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "client-005",
+    "name": "Coursera",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Coursera_logo.svg",
+    "industry": "Education",
+    "website": "https://www.coursera.org",
+    "size": 100,
+    "location": {
+      "city": "Fez",
+      "country": "Morocco"
+    },
+    "owner": {
+      "id": "user-127",
+      "name": "Nadia Berrada"
+    },
+    "contact": {
+      "name": "Omar Idrissi",
+      "title": "Academic Director",
+      "email": "omar.idrissi@coursera.org",
+      "phone": "+212535678901",
+      "linkedin": "https://linkedin.com/in/omaridrissi"
+    },
+    "jobs": [
+      {
+        "id": "job-501",
+        "title": "Software Instructor",
+        "status": "open",
+        "openingsTotal": 3,
+        "openingsFilled": 2
+      },
+      {
+        "id": "job-502",
+        "title": "Curriculum Developer",
+        "status": "draft",
+        "openingsTotal": 1,
+        "openingsFilled": 0
+      }
+    ],
+    "tags": ["education", "tech-training"],
+    "notes": "Growing edtech startup, looking for passionate educators.",
+    "comments": [
+      {
+        "id": "comment-006",
+        "author": "Nadia Berrada",
+        "content": "Omar is very passionate about education technology. Great opportunity for tech instructors.",
+        "timestamp": "2024-01-11T10:00:00Z",
+        "type": "meeting"
+      }
+    ],
+    "files": [
+      {
+        "id": "file-006",
+        "name": "EduTech_Curriculum_Framework.pdf",
+        "type": "application/pdf",
+        "size": 2560000,
+        "uploadedBy": "Omar Idrissi",
+        "uploadedAt": "2024-01-11T10:00:00Z",
+        "url": "/files/edutech_curriculum.pdf"
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg-006",
+        "from": "Nadia Berrada",
+        "to": "Omar Idrissi",
+        "subject": "Re: Software Instructor Position",
+        "content": "I have 2 excellent candidates with teaching experience and strong technical backgrounds.",
+        "timestamp": "2024-01-11T15:20:00Z",
+        "type": "email",
+        "status": "sent"
+      }
+    ]
+  }
+]

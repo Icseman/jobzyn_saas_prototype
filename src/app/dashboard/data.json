@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "header": "Senior Frontend Developer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "15",
+    "limit": "5",
+    "reviewer": "Sarah Johnson"
+  },
+  {
+    "id": 2,
+    "header": "Product Manager",
+    "type": "Management",
+    "status": "Done",
+    "target": "8",
+    "limit": "3",
+    "reviewer": "Mike Chen"
+  },
+  {
+    "id": 3,
+    "header": "UX Designer",
+    "type": "Design",
+    "status": "Done",
+    "target": "12",
+    "limit": "4",
+    "reviewer": "Emma Davis"
+  },
+  {
+    "id": 4,
+    "header": "DevOps Engineer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "10",
+    "limit": "2",
+    "reviewer": "Alex Rodriguez"
+  },
+  {
+    "id": 5,
+    "header": "Data Scientist",
+    "type": "Analytics",
+    "status": "In Process",
+    "target": "6",
+    "limit": "3",
+    "reviewer": "Lisa Wang"
+  },
+  {
+    "id": 6,
+    "header": "Marketing Manager",
+    "type": "Marketing",
+    "status": "Done",
+    "target": "5",
+    "limit": "2",
+    "reviewer": "David Kim"
+  },
+  {
+    "id": 7,
+    "header": "Backend Developer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "18",
+    "limit": "6",
+    "reviewer": "James Wilson"
+  },
+  {
+    "id": 8,
+    "header": "Sales Representative",
+    "type": "Sales",
+    "status": "Done",
+    "target": "4",
+    "limit": "2",
+    "reviewer": "Maria Garcia"
+  },
+  {
+    "id": 9,
+    "header": "QA Engineer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "7",
+    "limit": "3",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 10,
+    "header": "Content Writer",
+    "type": "Content",
+    "status": "Done",
+    "target": "3",
+    "limit": "1",
+    "reviewer": "Sophie Brown"
+  },
+  {
+    "id": 11,
+    "header": "Mobile Developer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "9",
+    "limit": "3",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 12,
+    "header": "HR Specialist",
+    "type": "Human Resources",
+    "status": "Done",
+    "target": "2",
+    "limit": "1",
+    "reviewer": "Jennifer Lee"
+  },
+  {
+    "id": 13,
+    "header": "Full Stack Developer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "14",
+    "limit": "5",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 14,
+    "header": "Graphic Designer",
+    "type": "Design",
+    "status": "Done",
+    "target": "4",
+    "limit": "2",
+    "reviewer": "Carlos Mendez"
+  },
+  {
+    "id": 15,
+    "header": "Business Analyst",
+    "type": "Analytics",
+    "status": "In Process",
+    "target": "6",
+    "limit": "2",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 16,
+    "header": "Customer Success Manager",
+    "type": "Customer Service",
+    "status": "Done",
+    "target": "3",
+    "limit": "1",
+    "reviewer": "Amanda Taylor"
+  },
+  {
+    "id": 17,
+    "header": "Security Engineer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "8",
+    "limit": "2",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 18,
+    "header": "Project Manager",
+    "type": "Management",
+    "status": "Done",
+    "target": "5",
+    "limit": "2",
+    "reviewer": "Robert Anderson"
+  },
+  {
+    "id": 19,
+    "header": "UI Developer",
+    "type": "Technical",
+    "status": "In Process",
+    "target": "11",
+    "limit": "4",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": 20,
+    "header": "Digital Marketing Specialist",
+    "type": "Marketing",
+    "status": "Done",
+    "target": "4",
+    "limit": "2",
+    "reviewer": "Jessica Martinez"
+  }
+]

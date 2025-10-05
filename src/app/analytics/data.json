@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "generatedAt": "2025-09-30T15:30:00Z",
+    "timezone": "Africa/Casablanca",
+    "range": { "from": "2025-09-01", "to": "2025-09-30" },
+    "compareTo": { "from": "2025-08-01", "to": "2025-08-31" }
+  },
+  "kpis": {
+    "timeToFillMedianDays": { "value": 28, "deltaPct": -7.1 },
+    "activeJobs": { "value": 42, "deltaPct": 5.0 },
+    "offerRatePct": { "value": 18.2, "deltaPct": 2.4 },
+    "hires": { "value": 9, "deltaPct": 12.5 },
+    "agingOverThreshold": { "value": 6, "deltaPct": -14.3 },
+    "interviewsScheduled": { "value": 73, "deltaPct": 9.0 },
+    "applicantsPerJobMedian": { "value": 64, "deltaPct": 4.8 },
+    "firstResponseMedianHours": { "value": 7.2, "deltaPct": -10.0 }
+  },
+  "pipeline": {
+    "stages": [
+      { "name": "applied", "count": 2200 },
+      { "name": "screening", "count": 980 },
+      { "name": "interview", "count": 340 },
+      { "name": "offer", "count": 40 },
+      { "name": "hired", "count": 9 }
+    ],
+    "dropOffReasons": [
+      { "reason": "not qualified", "count": 420 },
+      { "reason": "no response", "count": 210 },
+      { "reason": "salary mismatch", "count": 65 },
+      { "reason": "cultural fit", "count": 45 },
+      { "reason": "technical skills", "count": 38 }
+    ],
+    "conversionByJob": [
+      { "jobId": "job-101", "title": "Senior Frontend Developer", "applied": 120, "screening": 60, "interview": 24, "offer": 3, "hired": 1 },
+      { "jobId": "job-102", "title": "Backend Engineer", "applied": 95, "screening": 45, "interview": 18, "offer": 2, "hired": 1 },
+      { "jobId": "job-103", "title": "Product Manager", "applied": 78, "screening": 35, "interview": 12, "offer": 1, "hired": 1 }
+    ]
+  },
+  "sla": {
+    "breachesByStage": [
+      { "stage": "screening", "breaches": 18, "total": 980, "breachRate": 1.8 },
+      { "stage": "interview", "breaches": 7, "total": 340, "breachRate": 2.1 },
+      { "stage": "offer", "breaches": 2, "total": 40, "breachRate": 5.0 }
+    ],
+    "firstResponseHoursByOwner": [
+      { "ownerId": "user-123", "name": "Anwar Bahou", "medianHours": 5.1 },
+      { "ownerId": "user-124", "name": "Fatima Alami", "medianHours": 9.4 },
+      { "ownerId": "user-125", "name": "Youssef Tazi", "medianHours": 12.3 },
+      { "ownerId": "user-126", "name": "Karim El Fassi", "medianHours": 6.8 }
+    ],
+    "timeToFillByClient": [
+      { "clientId": "client-001", "name": "Microsoft", "medianDays": 25 },
+      { "clientId": "client-002", "name": "Johnson & Johnson", "medianDays": 32 },
+      { "clientId": "client-003", "name": "Tesla", "medianDays": 28 },
+      { "clientId": "client-004", "name": "Goldman Sachs", "medianDays": 35 }
+    ],
+    "timeToFillTrend": [
+      { "date": "2025-09-01", "medianDays": 26 },
+      { "date": "2025-09-08", "medianDays": 28 },
+      { "date": "2025-09-15", "medianDays": 25 },
+      { "date": "2025-09-22", "medianDays": 30 },
+      { "date": "2025-09-29", "medianDays": 28 }
+    ]
+  },
+  "sourcing": {
+    "channels": [
+      { "name": "linkedin", "applicants": 950, "offers": 25, "hires": 6, "spend": 1200, "costPerHire": 200 },
+      { "name": "indeed", "applicants": 760, "offers": 9, "hires": 2, "spend": 800, "costPerHire": 400 },
+      { "name": "referral", "applicants": 140, "offers": 12, "hires": 5, "spend": 0, "costPerHire": 0 },
+      { "name": "glassdoor", "applicants": 180, "offers": 4, "hires": 1, "spend": 300, "costPerHire": 300 },
+      { "name": "company_website", "applicants": 120, "offers": 8, "hires": 2, "spend": 0, "costPerHire": 0 }
+    ],
+    "qualityBySource": [
+      { "source": "referral", "passRateToInterview": 0.45, "passRateToOffer": 0.18 },
+      { "source": "linkedin", "passRateToInterview": 0.32, "passRateToOffer": 0.12 },
+      { "source": "company_website", "passRateToInterview": 0.28, "passRateToOffer": 0.10 },
+      { "source": "indeed", "passRateToInterview": 0.22, "passRateToOffer": 0.08 },
+      { "source": "glassdoor", "passRateToInterview": 0.20, "passRateToOffer": 0.07 }
+    ]
+  },
+  "jobsHealth": {
+    "agingBuckets": [
+      { "bucket": "0-14", "count": 18, "percentage": 42.9 },
+      { "bucket": "15-30", "count": 12, "percentage": 28.6 },
+      { "bucket": "31-45", "count": 8, "percentage": 19.0 },
+      { "bucket": "46+", "count": 4, "percentage": 9.5 }
+    ],
+    "statusSplit": [
+      { "status": "open", "count": 34, "percentage": 80.9 },
+      { "status": "draft", "count": 3, "percentage": 7.1 },
+      { "status": "on_hold", "count": 5, "percentage": 11.9 },
+      { "status": "closed", "count": 22, "percentage": 52.4 }
+    ],
+    "prioritySplit": [
+      { "priority": "high", "count": 9, "percentage": 21.4 },
+      { "priority": "normal", "count": 28, "percentage": 66.7 },
+      { "priority": "low", "count": 5, "percentage": 11.9 }
+    ],
+    "filledVsTotal": [
+      { "jobId": "job-101", "title": "Senior Frontend Developer", "filled": 1, "total": 1, "status": "filled" },
+      { "jobId": "job-102", "title": "Backend Engineer", "filled": 1, "total": 1, "status": "filled" },
+      { "jobId": "job-103", "title": "Product Manager", "filled": 1, "total": 1, "status": "filled" },
+      { "jobId": "job-104", "title": "UX Designer", "filled": 0, "total": 1, "status": "open" },
+      { "jobId": "job-105", "title": "DevOps Engineer", "filled": 0, "total": 2, "status": "open" }
+    ]
+  },
+  "ownerPerformance": {
+    "leaderboard": [
+      { "ownerId": "user-123", "name": "Anwar Bahou", "hires": 4, "offers": 12, "interviews": 28, "medianResponseHours": 5.1, "avgTimeToFill": 24 },
+      { "ownerId": "user-124", "name": "Fatima Alami", "hires": 3, "offers": 9, "interviews": 22, "medianResponseHours": 9.4, "avgTimeToFill": 28 },
+      { "ownerId": "user-126", "name": "Karim El Fassi", "hires": 2, "offers": 8, "interviews": 18, "medianResponseHours": 6.8, "avgTimeToFill": 26 },
+      { "ownerId": "user-125", "name": "Youssef Tazi", "hires": 0, "offers": 2, "interviews": 5, "medianResponseHours": 12.3, "avgTimeToFill": 35 }
+    ],
+    "workload": [
+      { "ownerId": "user-123", "name": "Anwar Bahou", "jobs": 11, "inProcessCandidates": 84, "capacity": 15 },
+      { "ownerId": "user-124", "name": "Fatima Alami", "jobs": 9, "inProcessCandidates": 67, "capacity": 12 },
+      { "ownerId": "user-126", "name": "Karim El Fassi", "jobs": 8, "inProcessCandidates": 52, "capacity": 10 },
+      { "ownerId": "user-125", "name": "Youssef Tazi", "jobs": 6, "inProcessCandidates": 23, "capacity": 8 }
+    ],
+    "roundRobinBalance": [
+      { "poolId": "tech-pool", "name": "Technical Roles", "members": 3, "assignments": 12, "balance": 0.85 },
+      { "poolId": "sales-pool", "name": "Sales Roles", "members": 2, "assignments": 8, "balance": 0.92 }
+    ]
+  },
+  "clients": {
+    "topByHires": [
+      { "clientId": "client-001", "name": "Microsoft", "hires": 3, "revenue": 45000 },
+      { "clientId": "client-002", "name": "Johnson & Johnson", "hires": 2, "revenue": 32000 },
+      { "clientId": "client-003", "name": "Tesla", "hires": 2, "revenue": 28000 },
+      { "clientId": "client-004", "name": "Goldman Sachs", "hires": 1, "revenue": 18000 },
+      { "clientId": "client-005", "name": "Coursera", "hires": 1, "revenue": 15000 }
+    ],
+    "timeToFillByClient": [
+      { "clientId": "client-001", "name": "Microsoft", "medianDays": 25 },
+      { "clientId": "client-002", "name": "Johnson & Johnson", "medianDays": 32 },
+      { "clientId": "client-003", "name": "Tesla", "medianDays": 28 },
+      { "clientId": "client-004", "name": "Goldman Sachs", "medianDays": 35 },
+      { "clientId": "client-005", "name": "Coursera", "medianDays": 30 }
+    ],
+    "activeJobsByClient": [
+      { "clientId": "client-001", "name": "Microsoft", "openJobs": 5, "totalJobs": 8 },
+      { "clientId": "client-002", "name": "Johnson & Johnson", "openJobs": 4, "totalJobs": 6 },
+      { "clientId": "client-003", "name": "Tesla", "openJobs": 3, "totalJobs": 5 },
+      { "clientId": "client-004", "name": "Goldman Sachs", "openJobs": 2, "totalJobs": 4 },
+      { "clientId": "client-005", "name": "Coursera", "openJobs": 2, "totalJobs": 3 }
+    ]
+  },
+  "calendar": {
+    "interviewsPerDay": [
+      { "date": "2025-09-01", "count": 3 },
+      { "date": "2025-09-02", "count": 5 },
+      { "date": "2025-09-03", "count": 4 },
+      { "date": "2025-09-04", "count": 6 },
+      { "date": "2025-09-05", "count": 2 },
+      { "date": "2025-09-08", "count": 7 },
+      { "date": "2025-09-09", "count": 5 },
+      { "date": "2025-09-10", "count": 4 },
+      { "date": "2025-09-11", "count": 6 },
+      { "date": "2025-09-12", "count": 3 },
+      { "date": "2025-09-15", "count": 8 },
+      { "date": "2025-09-16", "count": 6 },
+      { "date": "2025-09-17", "count": 5 },
+      { "date": "2025-09-18", "count": 7 },
+      { "date": "2025-09-19", "count": 4 },
+      { "date": "2025-09-22", "count": 9 },
+      { "date": "2025-09-23", "count": 6 },
+      { "date": "2025-09-24", "count": 5 },
+      { "date": "2025-09-25", "count": 8 },
+      { "date": "2025-09-26", "count": 3 },
+      { "date": "2025-09-29", "count": 7 },
+      { "date": "2025-09-30", "count": 5 }
+    ],
+    "noShowRatePct": 6.5,
+    "schedulingLatencyHoursMedian": 26,
+    "roomUtilizationPct": 42,
+    "interviewTypes": [
+      { "type": "phone", "count": 45, "noShowRate": 4.2 },
+      { "type": "video", "count": 180, "noShowRate": 7.1 },
+      { "type": "onsite", "count": 48, "noShowRate": 5.8 }
+    ]
+  },
+  "notes": {
+    "notesCreated": 256,
+    "notesLinkedToJobs": 180,
+    "notesLinkedToClients": 210,
+    "mentions": 134,
+    "attachments": 92,
+    "notesOverTime": [
+      { "date": "2025-09-01", "count": 8 },
+      { "date": "2025-09-02", "count": 12 },
+      { "date": "2025-09-03", "count": 9 },
+      { "date": "2025-09-04", "count": 15 },
+      { "date": "2025-09-05", "count": 6 },
+      { "date": "2025-09-08", "count": 18 },
+      { "date": "2025-09-09", "count": 14 },
+      { "date": "2025-09-10", "count": 11 },
+      { "date": "2025-09-11", "count": 16 },
+      { "date": "2025-09-12", "count": 7 },
+      { "date": "2025-09-15", "count": 20 },
+      { "date": "2025-09-16", "count": 17 },
+      { "date": "2025-09-17", "count": 13 },
+      { "date": "2025-09-18", "count": 19 },
+      { "date": "2025-09-19", "count": 10 },
+      { "date": "2025-09-22", "count": 22 },
+      { "date": "2025-09-23", "count": 18 },
+      { "date": "2025-09-24", "count": 14 },
+      { "date": "2025-09-25", "count": 21 },
+      { "date": "2025-09-26", "count": 9 },
+      { "date": "2025-09-29", "count": 23 },
+      { "date": "2025-09-30", "count": 16 }
+    ]
+  },
+  "compliance": {
+    "consentCoveragePct": 96.2,
+    "missingFieldsRatePct": 3.1,
+    "postingCompliancePct": 88.4,
+    "auditFlags": 4,
+    "gdprConsent": [
+      { "status": "granted", "count": 1850, "percentage": 96.2 },
+      { "status": "denied", "count": 45, "percentage": 2.3 },
+      { "status": "pending", "count": 28, "percentage": 1.5 }
+    ],
+    "missingFields": [
+      { "field": "salary_range", "missing": 12, "total": 42 },
+      { "field": "location", "missing": 3, "total": 42 },
+      { "field": "employment_type", "missing": 2, "total": 42 }
+    ],
+    "auditLog": [
+      { "date": "2025-09-15", "action": "data_export", "user": "user-123", "flagged": true },
+      { "date": "2025-09-22", "action": "bulk_delete", "user": "user-124", "flagged": true },
+      { "date": "2025-09-28", "action": "consent_withdrawal", "user": "candidate-456", "flagged": false },
+      { "date": "2025-09-30", "action": "data_modification", "user": "user-126", "flagged": true }
+    ]
+  }
+}

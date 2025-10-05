@@ -1,0 +1,350 @@
+[
+  {
+    "id": "1",
+    "title": "Senior Frontend Developer",
+    "client": "Atlas Technologies",
+    "companyLogo": "https://logo.clearbit.com/atlas.com",
+    "owner": {
+      "name": "Amina Alami",
+      "avatar": "/avatars/amina.jpg",
+      "initials": "AA"
+    },
+    "openings": { "filled": 2, "total": 5 },
+    "applicants": { "total": 47, "unread": 3 },
+    "status": "open",
+    "location": {
+      "city": "Casablanca",
+      "state": "Casablanca-Settat",
+      "country": "Morocco",
+      "coordinates": { "lat": 33.5731, "lng": -7.5898 }
+    },
+    "workModel": "hybrid",
+    "employmentType": "full-time",
+    "salaryRange": "45,000 - 65,000 MAD",
+    "seniority": "Senior",
+    "lastActivity": "2 hours ago",
+    "age": 5,
+    "priority": "high",
+    "tags": ["React", "TypeScript", "Remote"],
+    "published": true
+  },
+  {
+    "id": "2",
+    "title": "Product Manager",
+    "client": "TechMaroc",
+    "companyLogo": "https://logo.clearbit.com/techmaroc.com",
+    "owner": {
+      "name": "Youssef Benali",
+      "avatar": "/avatars/youssef.jpg",
+      "initials": "YB"
+    },
+    "openings": { "filled": 0, "total": 2 },
+    "applicants": { "total": 23, "unread": 1 },
+    "status": "open",
+    "location": {
+      "city": "Rabat",
+      "state": "Rabat-Salé-Kénitra",
+      "country": "Morocco",
+      "coordinates": { "lat": 34.0209, "lng": -6.8416 }
+    },
+    "workModel": "remote",
+    "employmentType": "full-time",
+    "salaryRange": "50,000 - 75,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "1 day ago",
+    "age": 12,
+    "priority": "medium",
+    "tags": ["Product", "Strategy", "B2B"],
+    "published": true
+  },
+  {
+    "id": "3",
+    "title": "UX Designer",
+    "client": "Digital Solutions Maroc",
+    "companyLogo": "https://logo.clearbit.com/digitalsolutions.com",
+    "owner": {
+      "name": "Fatima Zahra",
+      "avatar": "/avatars/fatima.jpg",
+      "initials": "FZ"
+    },
+    "openings": { "filled": 1, "total": 3 },
+    "applicants": { "total": 34, "unread": 5 },
+    "status": "draft",
+    "location": {
+      "city": "Marrakech",
+      "state": "Marrakech-Safi",
+      "country": "Morocco",
+      "coordinates": { "lat": 31.6295, "lng": -7.9811 }
+    },
+    "workModel": "onsite",
+    "employmentType": "full-time",
+    "salaryRange": "35,000 - 50,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "3 days ago",
+    "age": 8,
+    "priority": "low",
+    "tags": ["Design", "Figma", "User Research"],
+    "published": false
+  },
+  {
+    "id": "4",
+    "title": "DevOps Engineer",
+    "client": "CloudMaroc",
+    "companyLogo": "https://logo.clearbit.com/cloudmaroc.com",
+    "owner": {
+      "name": "Omar Idrissi",
+      "avatar": "/avatars/omar.jpg",
+      "initials": "OI"
+    },
+    "openings": { "filled": 0, "total": 2 },
+    "applicants": { "total": 18, "unread": 2 },
+    "status": "on-hold",
+    "location": {
+      "city": "Agadir",
+      "state": "Souss-Massa",
+      "country": "Morocco",
+      "coordinates": { "lat": 30.4278, "lng": -9.5981 }
+    },
+    "workModel": "hybrid",
+    "employmentType": "full-time",
+    "salaryRange": "40,000 - 60,000 MAD",
+    "seniority": "Senior",
+    "lastActivity": "5 days ago",
+    "age": 15,
+    "priority": "urgent",
+    "tags": ["AWS", "Kubernetes", "CI/CD"],
+    "published": true
+  },
+  {
+    "id": "5",
+    "title": "Data Scientist",
+    "client": "Analytics Morocco",
+    "companyLogo": "https://logo.clearbit.com/analyticsmorocco.com",
+    "owner": {
+      "name": "Khadija Tazi",
+      "avatar": "/avatars/khadija.jpg",
+      "initials": "KT"
+    },
+    "openings": { "filled": 1, "total": 3 },
+    "applicants": { "total": 29, "unread": 4 },
+    "status": "open",
+    "location": {
+      "city": "Fez",
+      "state": "Fès-Meknès",
+      "country": "Morocco",
+      "coordinates": { "lat": 34.0181, "lng": -5.0078 }
+    },
+    "workModel": "remote",
+    "employmentType": "full-time",
+    "salaryRange": "42,000 - 65,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "1 week ago",
+    "age": 20,
+    "priority": "medium",
+    "tags": ["Python", "Machine Learning", "Statistics"],
+    "published": true
+  },
+  {
+    "id": "6",
+    "title": "Backend Developer",
+    "client": "API Solutions Maroc",
+    "companyLogo": "https://logo.clearbit.com/apisolutions.com",
+    "owner": {
+      "name": "Hassan El Fassi",
+      "avatar": "/avatars/hassan.jpg",
+      "initials": "HE"
+    },
+    "openings": { "filled": 3, "total": 4 },
+    "applicants": { "total": 52, "unread": 7 },
+    "status": "open",
+    "location": {
+      "city": "Tangier",
+      "state": "Tanger-Tétouan-Al Hoceïma",
+      "country": "Morocco",
+      "coordinates": { "lat": 35.7595, "lng": -5.8340 }
+    },
+    "workModel": "hybrid",
+    "employmentType": "full-time",
+    "salaryRange": "38,000 - 55,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "4 hours ago",
+    "age": 3,
+    "priority": "high",
+    "tags": ["Node.js", "PostgreSQL", "Microservices"],
+    "published": true
+  },
+  {
+    "id": "7",
+    "title": "Marketing Manager",
+    "client": "Growth Morocco",
+    "companyLogo": "https://logo.clearbit.com/growthmorocco.com",
+    "owner": {
+      "name": "Nour El Houda",
+      "avatar": "/avatars/nour.jpg",
+      "initials": "NE"
+    },
+    "openings": { "filled": 0, "total": 1 },
+    "applicants": { "total": 15, "unread": 2 },
+    "status": "draft",
+    "location": {
+      "city": "Oujda",
+      "state": "Oriental",
+      "country": "Morocco",
+      "coordinates": { "lat": 34.6814, "lng": -1.9086 }
+    },
+    "workModel": "remote",
+    "employmentType": "full-time",
+    "salaryRange": "32,000 - 45,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "2 days ago",
+    "age": 10,
+    "priority": "low",
+    "tags": ["Digital Marketing", "SEO", "Content"],
+    "published": false
+  },
+  {
+    "id": "8",
+    "title": "Sales Director",
+    "client": "Revenue Morocco",
+    "companyLogo": "https://logo.clearbit.com/revenuemorocco.com",
+    "owner": {
+      "name": "Rachid Alaoui",
+      "avatar": "/avatars/rachid.jpg",
+      "initials": "RA"
+    },
+    "openings": { "filled": 1, "total": 2 },
+    "applicants": { "total": 8, "unread": 1 },
+    "status": "open",
+    "location": {
+      "city": "Meknes",
+      "state": "Fès-Meknès",
+      "country": "Morocco",
+      "coordinates": { "lat": 33.8935, "lng": -5.5473 }
+    },
+    "workModel": "onsite",
+    "employmentType": "full-time",
+    "salaryRange": "55,000 - 80,000 MAD",
+    "seniority": "Senior",
+    "lastActivity": "6 hours ago",
+    "age": 7,
+    "priority": "urgent",
+    "tags": ["Sales", "Leadership", "B2B"],
+    "published": true
+  },
+  {
+    "id": "9",
+    "title": "QA Engineer",
+    "client": "TestMaroc",
+    "companyLogo": "https://logo.clearbit.com/testmaroc.com",
+    "owner": {
+      "name": "Sara Benkirane",
+      "avatar": "/avatars/sara.jpg",
+      "initials": "SB"
+    },
+    "openings": { "filled": 2, "total": 3 },
+    "applicants": { "total": 25, "unread": 3 },
+    "status": "open",
+    "location": {
+      "city": "Kenitra",
+      "state": "Rabat-Salé-Kénitra",
+      "country": "Morocco",
+      "coordinates": { "lat": 34.2611, "lng": -6.5802 }
+    },
+    "workModel": "hybrid",
+    "employmentType": "full-time",
+    "salaryRange": "30,000 - 42,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "1 day ago",
+    "age": 9,
+    "priority": "medium",
+    "tags": ["Testing", "Automation", "Selenium"],
+    "published": true
+  },
+  {
+    "id": "10",
+    "title": "Content Writer",
+    "client": "Wordsmith Morocco",
+    "companyLogo": "https://logo.clearbit.com/wordsmithmorocco.com",
+    "owner": {
+      "name": "Ahmed Mansouri",
+      "avatar": "/avatars/ahmed.jpg",
+      "initials": "AM"
+    },
+    "openings": { "filled": 0, "total": 2 },
+    "applicants": { "total": 31, "unread": 6 },
+    "status": "draft",
+    "location": {
+      "city": "Tetouan",
+      "state": "Tanger-Tétouan-Al Hoceïma",
+      "country": "Morocco",
+      "coordinates": { "lat": 35.5889, "lng": -5.3626 }
+    },
+    "workModel": "remote",
+    "employmentType": "contract",
+    "salaryRange": "20,000 - 30,000 MAD",
+    "seniority": "Junior",
+    "lastActivity": "3 days ago",
+    "age": 14,
+    "priority": "low",
+    "tags": ["Writing", "Content", "SEO"],
+    "published": false
+  },
+  {
+    "id": "11",
+    "title": "Mobile Developer",
+    "client": "AppStudio Maroc",
+    "companyLogo": "https://logo.clearbit.com/appstudiomaroc.com",
+    "owner": {
+      "name": "Zineb El Mansouri",
+      "avatar": "/avatars/zineb.jpg",
+      "initials": "ZE"
+    },
+    "openings": { "filled": 1, "total": 3 },
+    "applicants": { "total": 41, "unread": 5 },
+    "status": "open",
+    "location": {
+      "city": "Casablanca",
+      "state": "Casablanca-Settat",
+      "country": "Morocco",
+      "coordinates": { "lat": 33.5731, "lng": -7.5898 }
+    },
+    "workModel": "hybrid",
+    "employmentType": "full-time",
+    "salaryRange": "40,000 - 58,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "5 hours ago",
+    "age": 4,
+    "priority": "high",
+    "tags": ["React Native", "iOS", "Android"],
+    "published": true
+  },
+  {
+    "id": "12",
+    "title": "HR Specialist",
+    "client": "PeopleFirst Morocco",
+    "companyLogo": "https://logo.clearbit.com/peoplefirstmorocco.com",
+    "owner": {
+      "name": "Karim Benjelloun",
+      "avatar": "/avatars/karim.jpg",
+      "initials": "KB"
+    },
+    "openings": { "filled": 0, "total": 1 },
+    "applicants": { "total": 12, "unread": 2 },
+    "status": "on-hold",
+    "location": {
+      "city": "Rabat",
+      "state": "Rabat-Salé-Kénitra",
+      "country": "Morocco",
+      "coordinates": { "lat": 34.0209, "lng": -6.8416 }
+    },
+    "workModel": "onsite",
+    "employmentType": "full-time",
+    "salaryRange": "26,000 - 35,000 MAD",
+    "seniority": "Mid",
+    "lastActivity": "1 week ago",
+    "age": 18,
+    "priority": "medium",
+    "tags": ["HR", "Recruiting", "Benefits"],
+    "published": true
+  }
+]
