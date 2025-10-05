@@ -188,7 +188,7 @@ const ProfileSettings: React.FC = () => {
           <div className="flex items-start gap-6">
             <div className="relative">
               <Avatar className="h-24 w-24">
-                <AvatarImage src="/src/Assets/salma.jpeg" alt="Salma Bennani" />
+                <AvatarImage src="/assets/salma.jpeg" alt="Salma Bennani" />
                 <AvatarFallback className="text-lg">SB</AvatarFallback>
               </Avatar>
               {isEditing && (

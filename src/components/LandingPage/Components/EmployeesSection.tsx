@@ -77,7 +77,7 @@ const EmployeesSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <img 
-            src="/src/components/LandingPage/Assets/empoloyees.png" 
+            src="/assets/landing-page/empoloyees.png" 
             alt="Our Team" 
             className="w-full h-auto rounded-2xl shadow-lg"
           />

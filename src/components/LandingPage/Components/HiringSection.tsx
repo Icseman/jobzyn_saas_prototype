@@ -86,7 +86,7 @@ const HiringSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <img 
-            src="/src/components/LandingPage/Assets/hiring.png" 
+            src="/assets/landing-page/hiring.png" 
             alt="Hiring Platform" 
             className="w-full h-auto rounded-2xl shadow-lg"
           />

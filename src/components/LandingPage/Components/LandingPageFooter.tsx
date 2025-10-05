@@ -285,7 +285,7 @@ const LandingPageFooter: React.FC = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
                 <img 
-                  src="/src/Assets/jobsyn_recruitment.svg" 
+                  src="/assets/jobsyn_recruitment.svg" 
                   alt="Jobzyn Logo" 
                   className="h-8 w-auto filter brightness-0 invert"
                 />

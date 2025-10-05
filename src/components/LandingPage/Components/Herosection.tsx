@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
           {/* Left Side */}
           <div className="flex items-center">
             <img 
-              src="/src/Assets/jobsyn_recruitment.svg" 
+              src="/assets/jobsyn_recruitment.svg" 
               alt="Jobzyn Logo" 
               className="h-8 w-auto"
             />
@@ -126,7 +126,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
         >
           <img 
-            src="/src/components/LandingPage/Assets/Group 1.png" 
+            src="/assets/landing-page/Group 1.png" 
             alt="Jobzyn Hero Visual" 
             className="w-full h-auto object-contain"
           />

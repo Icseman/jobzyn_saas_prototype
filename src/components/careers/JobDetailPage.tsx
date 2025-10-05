@@ -301,7 +301,7 @@ export const JobDetailPage: React.FC = () => {
               </Button>
               <Separator orientation="vertical" className="h-6" />
               <img 
-                src="/src/Assets/jobsyn_recruitment.svg" 
+                src="/assets/jobsyn_recruitment.svg" 
                 alt="Jobzyn Logo" 
                 className="h-8 w-auto"
               />

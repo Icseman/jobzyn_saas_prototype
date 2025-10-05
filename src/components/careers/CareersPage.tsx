@@ -132,7 +132,7 @@ export const CareersPage: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-sm">
         <div className="flex items-center justify-center h-16 px-4">
           <img 
-            src="/src/Assets/jobsyn_recruitment.svg" 
+            src="/assets/jobsyn_recruitment.svg" 
             alt="Jobzyn Logo" 
             className="h-8 w-auto"
           />

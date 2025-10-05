@@ -293,7 +293,7 @@ const OrgChart: React.FC = () => {
                   <CardContent className="p-4 text-center">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden">
                       <img 
-                        src="/src/Assets/team/Simo Zizi.jpeg" 
+                        src="/assets/team/Simo Zizi.jpeg" 
                         alt="Simo Zizi"
                         className="w-full h-full object-cover rounded-full"
                       />

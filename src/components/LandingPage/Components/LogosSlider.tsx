@@ -10,14 +10,14 @@ const LogosSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const logos: Logo[] = [
-    { name: 'Theodo', src: '/src/components/LandingPage/Assets/Logos/theodo.svg' },
-    { name: 'JESA', src: '/src/components/LandingPage/Assets/Logos/JESA.svg' },
-    { name: 'Intelica', src: '/src/components/LandingPage/Assets/Logos/intelica.svg' },
-    { name: 'Glovo', src: '/src/components/LandingPage/Assets/Logos/glovo-logo-vector.svg' },
-    { name: 'Deloitte', src: '/src/components/LandingPage/Assets/Logos/deloitte.svg' },
-    { name: 'CIH Bank', src: '/src/components/LandingPage/Assets/Logos/CIH Bank.svg' },
-    { name: 'CDG', src: '/src/components/LandingPage/Assets/Logos/CDG.svg' },
-    { name: 'CDG Capital', src: '/src/components/LandingPage/Assets/Logos/CDG Capital.svg' },
+    { name: 'Theodo', src: '/assets/landing-page/Logos/theodo.svg' },
+    { name: 'JESA', src: '/assets/landing-page/Logos/JESA.svg' },
+    { name: 'Intelica', src: '/assets/landing-page/Logos/intelica.svg' },
+    { name: 'Glovo', src: '/assets/landing-page/Logos/glovo-logo-vector.svg' },
+    { name: 'Deloitte', src: '/assets/landing-page/Logos/deloitte.svg' },
+    { name: 'CIH Bank', src: '/assets/landing-page/Logos/CIH Bank.svg' },
+    { name: 'CDG', src: '/assets/landing-page/Logos/CDG.svg' },
+    { name: 'CDG Capital', src: '/assets/landing-page/Logos/CDG Capital.svg' },
   ];
 
   // Duplicate logos for infinite scroll effect

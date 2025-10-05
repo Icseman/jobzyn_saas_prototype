@@ -13,7 +13,7 @@ const StickyScrollSection: React.FC = () => {
         "See automation capabilities →",
         "View job posting analytics →"
       ],
-      image: "/src/components/LandingPage/Assets/features/Jobs.png",
+      image: "/assets/landing-page/features/Jobs.png",
       imageAlt: "Job Management Dashboard"
     },
     {
@@ -24,7 +24,7 @@ const StickyScrollSection: React.FC = () => {
         "View resume templates →",
         "Learn about ATS optimization →"
       ],
-      image: "/src/components/LandingPage/Assets/features/resume builder.png",
+      image: "/assets/landing-page/features/resume builder.png",
       imageAlt: "Resume Builder Interface"
     },
     {
@@ -35,7 +35,7 @@ const StickyScrollSection: React.FC = () => {
         "See communication tools →",
         "View client analytics →"
       ],
-      image: "/src/components/LandingPage/Assets/features/Clients.png",
+      image: "/assets/landing-page/features/Clients.png",
       imageAlt: "Client Management Dashboard"
     },
     {
@@ -46,7 +46,7 @@ const StickyScrollSection: React.FC = () => {
         "See customization options →",
         "View page templates →"
       ],
-      image: "/src/components/LandingPage/Assets/features/Careers page.png",
+      image: "/assets/landing-page/features/Careers page.png",
       imageAlt: "Career Page Builder"
     },
     {
@@ -57,7 +57,7 @@ const StickyScrollSection: React.FC = () => {
         "Explore reporting features →",
         "See performance metrics →"
       ],
-      image: "/src/components/LandingPage/Assets/features/dashboard.png",
+      image: "/assets/landing-page/features/dashboard.png",
       imageAlt: "Analytics Dashboard"
     }
   ];
