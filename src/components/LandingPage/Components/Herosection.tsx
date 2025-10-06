@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import LogosSlider from './LogosSlider';
 import StickyScrollSection from './StickyScrollSection';
 import EmployeesSection from './EmployeesSection';
@@ -10,6 +11,57 @@ import LandingPageFooter from './LandingPageFooter';
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
+  
+  // Typing animation state
+  const sentences = [
+    "Find Talent Faster",
+    "Your Next Hire Awaits",
+    "Recruit Smarter Today…",
+    "Talent Made Simple",
+    "AI-Powered Hiring",
+    "Better Matches, Faster",
+    "Hire with Confidence",
+    "Unlock Top Talent",
+    "Hiring, Simplified"
+  ];
+  
+  const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isWaiting, setIsWaiting] = useState(false);
+
+  useEffect(() => {
+    const currentSentence = sentences[currentSentenceIndex];
+    
+    if (isWaiting) {
+      const waitTimeout = setTimeout(() => {
+        setIsWaiting(false);
+        setIsDeleting(true);
+      }, 2000); // Wait 2 seconds before deleting
+      return () => clearTimeout(waitTimeout);
+    }
+
+    if (isDeleting) {
+      if (currentText.length > 0) {
+        const deleteTimeout = setTimeout(() => {
+          setCurrentText(currentText.slice(0, -1));
+        }, 50); // Delete speed
+        return () => clearTimeout(deleteTimeout);
+      } else {
+        setIsDeleting(false);
+        setCurrentSentenceIndex((prev) => (prev + 1) % sentences.length);
+      }
+    } else {
+      if (currentText.length < currentSentence.length) {
+        const typeTimeout = setTimeout(() => {
+          setCurrentText(currentSentence.slice(0, currentText.length + 1));
+        }, 100); // Typing speed
+        return () => clearTimeout(typeTimeout);
+      } else {
+        setIsWaiting(true);
+      }
+    }
+  }, [currentText, isDeleting, isWaiting, currentSentenceIndex, sentences]);
 
   const handleLogin = () => {
     navigate('/sign-in');
@@ -22,26 +74,33 @@ const HeroSection: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Top Navigation */}
-      <nav className="bg-white border-b border-gray-100">
+      <nav className="bg-white/95 backdrop-blur-md border-b border-gray-200/50 sticky top-0 z-50 shadow-sm">
         <div className="flex items-center justify-between px-4 sm:px-6 py-4 max-w-7xl mx-auto">
-          {/* Left Side */}
-          <div className="flex items-center">
+          {/* Left Side - Logo and Navigation */}
+          <div className="flex items-center space-x-8">
             <img 
               src="/assets/jobsyn_recruitment.svg" 
               alt="Jobzyn Logo" 
               className="h-6 sm:h-8 w-auto"
             />
-          </div>
-
-          {/* Center Navigation Links - Hidden on mobile */}
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-            <a href="#" className="text-black hover:text-gray-600 transition-colors text-sm lg:text-base">Top Job</a>
-            <span className="text-black">•</span>
-            <a href="#" className="text-black hover:text-gray-600 transition-colors text-sm lg:text-base">Resume</a>
-            <span className="text-black">•</span>
-            <a href="#" className="text-black hover:text-gray-600 transition-colors text-sm lg:text-base">Hiring</a>
-            <span className="text-black">•</span>
-            <a href="#" className="text-black hover:text-gray-600 transition-colors text-sm lg:text-base">Companies</a>
+            
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center space-x-8">
+              <a 
+                href="/pricing" 
+                className="relative text-black hover:text-orange-600 transition-colors duration-300 font-medium text-sm lg:text-base group"
+              >
+                Pricing
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+              <a 
+                href="/contact" 
+                className="relative text-black hover:text-orange-600 transition-colors duration-300 font-medium text-sm lg:text-base group"
+              >
+                Contact Us
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </div>
           </div>
 
           {/* Right Side */}
@@ -58,8 +117,43 @@ const HeroSection: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="bg-[#FDF1E8] min-h-[calc(100vh-80px)]">
-        <div className="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 py-8 sm:py-16 max-w-7xl mx-auto gap-8 lg:gap-16">
+      <div className="bg-[#FDF1E8] min-h-[calc(100vh-80px)] relative overflow-hidden">
+        {/* Background decorative shapes */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Large circles */}
+          <div className="absolute top-20 left-10 w-32 h-32 bg-orange-200/20 rounded-full blur-xl"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-orange-300/15 rounded-full blur-lg"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-orange-100/25 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-orange-200/20 rounded-full blur-xl"></div>
+          
+          {/* Medium circles */}
+          <div className="absolute top-1/3 left-1/2 w-20 h-20 bg-orange-300/10 rounded-full blur-lg"></div>
+          <div className="absolute top-2/3 right-1/4 w-16 h-16 bg-orange-200/15 rounded-full blur-md"></div>
+          <div className="absolute bottom-1/3 left-1/3 w-24 h-24 bg-orange-100/20 rounded-full blur-lg"></div>
+          
+          {/* Small circles */}
+          <div className="absolute top-16 right-1/2 w-12 h-12 bg-orange-300/25 rounded-full blur-sm"></div>
+          <div className="absolute bottom-16 left-1/2 w-8 h-8 bg-orange-200/30 rounded-full blur-sm"></div>
+          <div className="absolute top-1/2 left-16 w-14 h-14 bg-orange-100/20 rounded-full blur-md"></div>
+          
+          {/* Geometric shapes */}
+          <div className="absolute top-32 right-10 w-16 h-16 bg-orange-200/15 rounded-lg rotate-45 blur-sm"></div>
+          <div className="absolute bottom-32 left-10 w-20 h-20 bg-orange-300/10 rounded-lg rotate-12 blur-sm"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-orange-400/10 rounded-full blur-sm"></div>
+          
+          {/* Additional subtle shapes */}
+          <div className="absolute top-24 left-1/3 w-6 h-6 bg-orange-200/20 rounded-full blur-xs"></div>
+          <div className="absolute bottom-24 right-1/3 w-10 h-10 bg-orange-300/15 rounded-full blur-sm"></div>
+          <div className="absolute top-3/4 left-1/4 w-18 h-18 bg-orange-100/25 rounded-full blur-md"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-22 h-22 bg-orange-200/10 rounded-full blur-lg"></div>
+          
+          {/* Floating dots */}
+          <div className="absolute top-1/4 left-1/5 w-4 h-4 bg-orange-300/30 rounded-full blur-xs"></div>
+          <div className="absolute top-1/2 right-1/5 w-6 h-6 bg-orange-200/25 rounded-full blur-sm"></div>
+          <div className="absolute bottom-1/4 left-2/3 w-5 h-5 bg-orange-100/35 rounded-full blur-xs"></div>
+        </div>
+        
+        <div className="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 py-8 sm:py-16 max-w-7xl mx-auto gap-8 lg:gap-16 relative z-10">
         {/* Left Hero Content */}
         <motion.div 
           className="flex-1 max-w-2xl text-center lg:text-left"
@@ -79,14 +173,19 @@ const HeroSection: React.FC = () => {
           </motion.div>
 
           {/* Main Headline */}
-          <motion.h2 
-            className="text-3xl sm:text-5xl lg:text-6xl xl:text-8xl font-bold text-black mb-8 sm:mb-12 leading-tight"
+          <motion.div 
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 leading-tight"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Smarter Hiring Starts Here...
-          </motion.h2>
+            <div className="h-[1.2em] flex items-center overflow-hidden">
+              <span className="inline-block whitespace-nowrap bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+                {currentText}
+                <span className="animate-pulse bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">|</span>
+              </span>
+            </div>
+          </motion.div>
 
           {/* Supporting CTAs */}
           <motion.div 
