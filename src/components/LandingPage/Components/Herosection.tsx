@@ -5,6 +5,7 @@ import LogosSlider from './LogosSlider';
 import StickyScrollSection from './StickyScrollSection';
 import EmployeesSection from './EmployeesSection';
 import HiringSection from './HiringSection';
+import PricingSection from './PricingSection';
 import LandingPageFooter from './LandingPageFooter';
 
 const HeroSection: React.FC = () => {
@@ -175,6 +176,9 @@ const HeroSection: React.FC = () => {
       
       {/* Hiring Section */}
       <HiringSection />
+      
+      {/* Pricing Section */}
+      <PricingSection />
       
       {/* Footer */}
       <LandingPageFooter />

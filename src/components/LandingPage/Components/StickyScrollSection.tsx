@@ -111,7 +111,7 @@ const StickyScrollSection: React.FC = () => {
             <img 
               src={sections[activeSection].image}
               alt={sections[activeSection].imageAlt}
-              className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105 max-w-md mx-auto"
+              className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105 max-w-lg mx-auto"
             />
             
             {/* Mobile Indicators */}
@@ -216,7 +216,7 @@ const StickyScrollSection: React.FC = () => {
                 <img 
                   src={sections[activeSection].image}
                   alt={sections[activeSection].imageAlt}
-                  className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
+                  className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105 max-w-2xl"
                 />
               </motion.div>
 
