@@ -32,18 +32,18 @@ const LogosSlider: React.FC = () => {
   }, [logos.length]);
 
   return (
-    <div className="bg-gray-50 py-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-gray-50 py-8 sm:py-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <motion.p 
-            className="text-gray-600 text-sm font-medium tracking-wider uppercase mb-2"
+            className="text-gray-600 text-xs sm:text-sm font-medium tracking-wider uppercase mb-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -52,7 +52,7 @@ const LogosSlider: React.FC = () => {
             Trusted by Industry Leaders
           </motion.p>
           <motion.h3 
-            className="text-2xl font-bold text-gray-900"
+            className="text-xl sm:text-2xl font-bold text-gray-900"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -69,15 +69,15 @@ const LogosSlider: React.FC = () => {
             {duplicatedLogos.map((logo, index) => (
               <div
                 key={`${logo.name}-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center group"
-                style={{ width: '200px' }}
+                className="flex-shrink-0 mx-4 sm:mx-6 lg:mx-8 flex items-center justify-center group"
+                style={{ width: '120px' }}
               >
-                <div className="relative w-full h-16 flex items-center justify-center">
+                <div className="relative w-full h-12 sm:h-16 flex items-center justify-center">
                   <img
                     src={logo.src}
                     alt={`${logo.name} logo`}
                     className={`w-auto filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300 ease-in-out ${
-                      logo.name === 'Glovo' ? 'max-h-16' : 'max-h-12'
+                      logo.name === 'Glovo' ? 'max-h-12 sm:max-h-16' : 'max-h-8 sm:max-h-12'
                     }`}
                     style={{
                       filter: 'brightness(0) saturate(100%)',
@@ -96,19 +96,19 @@ const LogosSlider: React.FC = () => {
           </div>
 
           {/* Gradient overlays for smooth edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
         </div>
 
         {/* Dots indicator */}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
           {logos.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? 'bg-gray-900 w-6'
+                  ? 'bg-gray-900 w-4 sm:w-6'
                   : 'bg-gray-300 hover:bg-gray-400'
               }`}
             />
@@ -117,7 +117,7 @@ const LogosSlider: React.FC = () => {
 
         {/* Stats */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-gray-200"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 pt-8 sm:pt-16 border-t border-gray-200"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -130,8 +130,8 @@ const LogosSlider: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <div className="text-3xl font-bold text-gray-900 mb-2">500+</div>
-            <div className="text-gray-600">Companies Trust Us</div>
+            <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">500+</div>
+            <div className="text-sm sm:text-base text-gray-600">Companies Trust Us</div>
           </motion.div>
           <motion.div 
             className="text-center"
@@ -140,8 +140,8 @@ const LogosSlider: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="text-3xl font-bold text-gray-900 mb-2">50K+</div>
-            <div className="text-gray-600">Successful Hires</div>
+            <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">50K+</div>
+            <div className="text-sm sm:text-base text-gray-600">Successful Hires</div>
           </motion.div>
           <motion.div 
             className="text-center"
@@ -150,8 +150,8 @@ const LogosSlider: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="text-3xl font-bold text-gray-900 mb-2">95%</div>
-            <div className="text-gray-600">Client Satisfaction</div>
+            <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">95%</div>
+            <div className="text-sm sm:text-base text-gray-600">Client Satisfaction</div>
           </motion.div>
         </motion.div>
       </div>

@@ -62,6 +62,16 @@ const StickyScrollSection: React.FC = () => {
     }
   ];
 
+  const scrollToSection = (index: number) => {
+    const element = document.querySelector(`[data-text-section="${index}"]`);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const textSections = document.querySelectorAll('[data-text-section]');
@@ -79,21 +89,57 @@ const StickyScrollSection: React.FC = () => {
       });
     };
 
+    // Initial check
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <div className="bg-white py-12 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        {/* Mobile Image Slider - Shows on top for mobile */}
+        <div className="lg:hidden mb-8">
+          <motion.div 
+            className="relative overflow-hidden"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <img 
+              src={sections[activeSection].image}
+              alt={sections[activeSection].imageAlt}
+              className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105 max-w-md mx-auto"
+            />
+            
+            {/* Mobile Indicators */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {sections.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => scrollToSection(index)}
+                  className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                    activeSection === index 
+                      ? 'bg-blue-600' 
+                      : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                  aria-label={`Go to section ${index + 1}`}
+                />
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Section - Text Content */}
-          <div className="space-y-32">
+          <div className="space-y-16 sm:space-y-32 lg:order-1">
             {sections.map((section, index) => (
               <motion.div 
                 key={index}
                 data-text-section={index}
-                className={`space-y-8 transition-opacity duration-500 ${
+                className={`space-y-6 sm:space-y-8 transition-opacity duration-500 ${
                   activeSection === index ? 'opacity-100' : 'opacity-60'
                 }`}
                 initial={{ opacity: 0, x: -50 }}
@@ -103,7 +149,7 @@ const StickyScrollSection: React.FC = () => {
               >
                 {/* Main Headline */}
                 <motion.h2 
-                  className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight"
+                  className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
@@ -114,7 +160,7 @@ const StickyScrollSection: React.FC = () => {
                 
                 {/* Body Text */}
                 <motion.p 
-                  className="text-lg text-gray-600 leading-relaxed"
+                  className="text-base sm:text-lg text-gray-600 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 + 0.4 }}
@@ -125,7 +171,7 @@ const StickyScrollSection: React.FC = () => {
                 
                 {/* Call-to-Action Links */}
                 <motion.div 
-                  className="space-y-4"
+                  className="space-y-3 sm:space-y-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 + 0.6 }}
@@ -135,7 +181,7 @@ const StickyScrollSection: React.FC = () => {
                     <motion.a 
                       key={linkIndex}
                       href="#" 
-                      className="block text-lg text-gray-900 hover:text-blue-600 transition-colors duration-200 underline decoration-2 underline-offset-4 hover:decoration-blue-600"
+                      className="block text-base sm:text-lg text-gray-900 hover:text-blue-600 transition-colors duration-200 underline decoration-2 underline-offset-4 hover:decoration-blue-600"
                       whileHover={{ scale: 1.02 }}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -150,9 +196,9 @@ const StickyScrollSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Right Section - Sticky Feature Image */}
+          {/* Right Section - Desktop Sticky Feature Image */}
           <motion.div 
-            className="sticky top-20"
+            className="hidden lg:block sticky top-8 sm:top-20 order-2"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -174,9 +220,9 @@ const StickyScrollSection: React.FC = () => {
                 />
               </motion.div>
 
-              {/* Feature Indicators */}
+              {/* Desktop Feature Indicators */}
               <motion.div 
-                className="flex justify-center mt-6 space-x-2"
+                className="flex justify-center mt-4 sm:mt-6 space-x-2"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -185,8 +231,8 @@ const StickyScrollSection: React.FC = () => {
                 {sections.map((_, index) => (
                   <motion.button
                     key={index}
-                    onClick={() => setActiveSection(index)}
-                    className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+                    onClick={() => scrollToSection(index)}
+                    className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors duration-200 ${
                       activeSection === index 
                         ? 'bg-blue-600' 
                         : 'bg-gray-300 hover:bg-gray-400'

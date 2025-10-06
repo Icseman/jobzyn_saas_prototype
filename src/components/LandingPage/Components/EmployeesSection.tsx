@@ -38,18 +38,18 @@ const EmployeesSection: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-20">
-      <div className="max-w-[1400px] mx-auto px-6">
+    <div className="bg-gray-50 py-12 sm:py-20">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <motion.p 
-            className="text-gray-600 text-sm font-medium tracking-wider uppercase mb-2"
+            className="text-gray-600 text-xs sm:text-sm font-medium tracking-wider uppercase mb-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -58,7 +58,7 @@ const EmployeesSection: React.FC = () => {
             Employee Management
           </motion.p>
           <motion.h3 
-            className="text-2xl font-bold text-gray-900"
+            className="text-xl sm:text-2xl font-bold text-gray-900"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -70,7 +70,7 @@ const EmployeesSection: React.FC = () => {
 
         {/* Main Image */}
         <motion.div 
-          className="mb-16"
+          className="mb-12 sm:mb-16"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -85,7 +85,7 @@ const EmployeesSection: React.FC = () => {
 
         {/* Stats Cards */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -101,16 +101,16 @@ const EmployeesSection: React.FC = () => {
               whileHover={{ scale: 1.05 }}
             >
               <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-white">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-orange-100 rounded-xl flex-shrink-0">
-                      <stat.icon className="h-6 w-6 text-orange-600" />
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="p-2 sm:p-3 bg-orange-100 rounded-xl flex-shrink-0">
+                      <stat.icon className="h-5 w-5 sm:h-6 sm:w-6 text-orange-600" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
                         {stat.title}
                       </h3>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                         {stat.description}
                       </p>
                     </div>
@@ -123,14 +123,14 @@ const EmployeesSection: React.FC = () => {
 
         {/* Call to Action */}
         <motion.div 
-          className="mt-16 text-center"
+          className="mt-12 sm:mt-16 text-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
         >
           <motion.h2 
-            className="text-3xl font-bold text-gray-900 mb-4"
+            className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -139,7 +139,7 @@ const EmployeesSection: React.FC = () => {
             Complete Employee Management Solution
           </motion.h2>
           <motion.p 
-            className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
@@ -149,21 +149,21 @@ const EmployeesSection: React.FC = () => {
             system helps you build and maintain a thriving team structure.
           </motion.p>
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
             viewport={{ once: true }}
           >
             <motion.button 
-              className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
+              className="bg-orange-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Explore Employee Features
             </motion.button>
             <motion.button 
-              className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+              className="border border-gray-300 text-gray-700 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors text-sm sm:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

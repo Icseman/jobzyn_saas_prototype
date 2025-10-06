@@ -108,10 +108,10 @@ const LandingPageFooter: React.FC = () => {
         <div className="absolute top-0 left-0 w-px h-full bg-white/10"></div>
         <div className="absolute top-0 right-0 w-px h-full bg-white/10"></div>
         
-        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <motion.h2 
-              className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -120,7 +120,7 @@ const LandingPageFooter: React.FC = () => {
               Ready to Transform Your Hiring?
             </motion.h2>
             <motion.p 
-              className="text-xl text-orange-100 mb-8 leading-relaxed"
+              className="text-lg sm:text-xl text-orange-100 mb-6 sm:mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -131,7 +131,7 @@ const LandingPageFooter: React.FC = () => {
             </motion.p>
             
             <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -139,7 +139,7 @@ const LandingPageFooter: React.FC = () => {
             >
               <motion.button 
                 onClick={handleGetStarted}
-                className="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-colors flex items-center gap-2 shadow-lg"
+                className="bg-white text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-50 transition-colors flex items-center gap-2 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -148,7 +148,7 @@ const LandingPageFooter: React.FC = () => {
               </motion.button>
               <motion.button 
                 onClick={handleLogin}
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-orange-600 transition-colors"
+                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-orange-600 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -157,7 +157,7 @@ const LandingPageFooter: React.FC = () => {
             </motion.div>
 
             <motion.div 
-              className="flex flex-wrap justify-center items-center gap-8 text-orange-100"
+              className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 text-orange-100 text-sm sm:text-base"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -182,14 +182,14 @@ const LandingPageFooter: React.FC = () => {
 
       {/* Features Summary */}
       <motion.div 
-        className="py-16 bg-gray-50"
+        className="py-12 sm:py-16 bg-gray-50"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {features.map((feature, index) => (
               <motion.div 
                 key={index} 
@@ -200,11 +200,11 @@ const LandingPageFooter: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mb-4">
+                <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 text-blue-600 rounded-xl mb-3 sm:mb-4">
                   {feature.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -212,13 +212,13 @@ const LandingPageFooter: React.FC = () => {
       </motion.div>
 
       {/* Testimonials */}
-      <div className="py-20 bg-white">
-        <div className="w-full px-6">
-          <div className="text-center mb-16">
-            <p className="text-gray-600 text-sm font-medium tracking-wider uppercase mb-2">
+      <div className="py-12 sm:py-20 bg-white">
+        <div className="w-full px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <p className="text-gray-600 text-xs sm:text-sm font-medium tracking-wider uppercase mb-2">
               Client Testimonials
             </p>
-            <h2 className="text-2xl font-bold text-gray-900">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
               What Our Clients Say
             </h2>
           </div>
@@ -230,19 +230,19 @@ const LandingPageFooter: React.FC = () => {
               {[...testimonials.slice(0, 5), ...testimonials.slice(0, 5)].map((testimonial, index) => (
                 <div 
                   key={`top-${index}`}
-                  className="flex-shrink-0 w-80 mx-2"
+                  className="flex-shrink-0 w-72 sm:w-80 mx-2"
                 >
-                  <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:border-orange-500/50 transition-all duration-300 shadow-sm hover:shadow-md h-32">
+                  <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:border-orange-500/50 transition-all duration-300 shadow-sm hover:shadow-md h-28 sm:h-32">
                     <div className="flex items-start mb-4">
-                      <div className="w-10 h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xs sm:text-sm mr-2 sm:mr-3 flex-shrink-0">
                         {testimonial.avatar}
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h4 className="font-bold text-gray-900 text-sm mb-1">{testimonial.name}</h4>
+                        <h4 className="font-bold text-gray-900 text-xs sm:text-sm mb-1">{testimonial.name}</h4>
                         <p className="text-xs text-gray-600">{testimonial.company}</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-sm leading-relaxed">"{testimonial.content}"</p>
+                    <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">"{testimonial.content}"</p>
                   </div>
                 </div>
               ))}
@@ -256,19 +256,19 @@ const LandingPageFooter: React.FC = () => {
               {[...testimonials.slice(1, 6), ...testimonials.slice(1, 6)].map((testimonial, index) => (
                 <div 
                   key={`bottom-${index}`}
-                  className="flex-shrink-0 w-80 mx-2"
+                  className="flex-shrink-0 w-72 sm:w-80 mx-2"
                 >
-                  <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:border-orange-500/50 transition-all duration-300 shadow-sm hover:shadow-md h-32">
+                  <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200 hover:border-orange-500/50 transition-all duration-300 shadow-sm hover:shadow-md h-28 sm:h-32">
                     <div className="flex items-start mb-4">
-                      <div className="w-10 h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xs sm:text-sm mr-2 sm:mr-3 flex-shrink-0">
                         {testimonial.avatar}
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h4 className="font-bold text-gray-900 text-sm mb-1">{testimonial.name}</h4>
+                        <h4 className="font-bold text-gray-900 text-xs sm:text-sm mb-1">{testimonial.name}</h4>
                         <p className="text-xs text-gray-600">{testimonial.company}</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-sm leading-relaxed">"{testimonial.content}"</p>
+                    <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">"{testimonial.content}"</p>
                   </div>
                 </div>
               ))}
@@ -278,23 +278,23 @@ const LandingPageFooter: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <footer className="bg-gray-900 text-white py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
                 <img 
                   src="/assets/jobsyn_recruitment.svg" 
                   alt="Jobzyn Logo" 
-                  className="h-8 w-auto filter brightness-0 invert"
+                  className="h-6 sm:h-8 w-auto filter brightness-0 invert"
                 />
               </div>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 max-w-md">
                 Transform your hiring process with AI-powered recruitment solutions. 
                 Hire faster, smarter, and more efficiently with Jobzyn.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-3 sm:space-x-4">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </a>
